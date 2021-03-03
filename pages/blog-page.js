@@ -5,9 +5,16 @@ import { getAllPostsData } from "../lib/posts";
 export default function Blog({ posts }) {
   return (
     <Layout title="Blog">
-      <ul className="m-10">
-        {posts && posts.map(post => <Post key={post.id} post={post} />)}
-      </ul>
+      <div
+        className="overflow-y-scroll"
+        style={{
+          maxHeight: "80vh"
+        }}
+      >
+        <ul>
+          {posts && posts.map(post => <Post key={post.id} post={post} />)}
+        </ul>
+      </div>
     </Layout>
   );
 }
