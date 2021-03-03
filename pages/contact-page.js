@@ -4,7 +4,7 @@ import Image from "next/image";
 export default function Contact() {
   return (
     <Layout title="Contact">
-      <div className="bg-white text-center shadow-xl p-8 w-80 rounded">
+      <div className="p-8 text-center rounded shadow-xl from-yellow-300 to-red-300 bg-gradient-to-b w-80">
         <div className="mt-4">
           <p className="font-bold">Contant info</p>
         </div>
@@ -17,15 +17,15 @@ export default function Contact() {
             alt="Avatar"
           />
         </div>
-        <div className="mt-4">
-          <p className="font-bold">Address</p>
-          <p className="text-xs mt-2 text-gray-600">city A</p>
-          <p className="font-bold mt-3">E-mail</p>
-          <p className="text-xs mt-2 text-gray-600">abc@gmail.com</p>
-          <p className="font-bold mt-3">Phone</p>
-          <p className="text-xs mt-2 text-gray-600">000-123-456</p>
+        <div className="mt-4 text-gray-500">
+          <p className="font-bold">Address:</p>
+          <p className="mt-2 text-xs ">Augsburg</p>
+          <p className="mt-3 font-bold">E-mail:</p>
+          <p className="mt-2 text-xs ">hello@gmail.com</p>
+          <p className="mt-3 font-bold">Phone:</p>
+          <p className="mt-2 text-xs ">000-123-456</p>
         </div>
-        <div className="mt-6 flex justify-around">
+        <div className="flex justify-around mt-6">
           <div>
             <a
               href="https://nerdcave.com/tailwind-cheat-sheet"
@@ -33,7 +33,7 @@ export default function Contact() {
               rel="noopener noreferrer"
             >
               <svg
-                className="w-6 h-6 mr-3 text-blue-500"
+                className="w-6 h-6 mr-3 text-blue-400"
                 stroke="currentColor"
                 fill="currentColor"
                 viewBox="0 0 512 512"
@@ -50,7 +50,7 @@ export default function Contact() {
               rel="noopener noreferrer"
             >
               <svg
-                className="w-6 h-6 mr-3 text-blue-700"
+                className="w-6 h-6 mr-3 text-blue-500"
                 fill="currentColor"
                 viewBox="0 0 24 24"
                 xmlns="http://www.w3.org/2000/svg"

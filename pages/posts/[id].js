@@ -10,13 +10,13 @@ export default function Post({ post }) {
   return (
     <Layout title={post.title}>
       <p className="m-4">
-        {"ID : "}
+        {"written by User"}
         {post.id}
       </p>
-      <p className="mb-8 text-xl font-bold">{post.title}</p>
-      <p className="px-10">{post.body}</p>
-      <Link href="/blog-page">
-        <div className="flex cursor-pointer mt-12">
+      <p className="px-6 mb-8 text-xl font-bold">{post.title}</p>
+      <p className="max-w-4xl px-10">{post.body}</p>
+      <Link href="/blog-page" className="text-center">
+        <div className="flex mt-12 text-center text-blue-500 cursor-pointer">
           <svg
             className="w-6 h-6 mr-3"
             fill="currentColor"
