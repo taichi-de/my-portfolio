@@ -2,7 +2,7 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with `create-next-
 
 ## And here is the [work](https://nextjs-homepage.vercel.app/) that I made & uploaded with Netlify.
 
-# Getting Started
+### Getting Started
 
 First, run the development server:
 
