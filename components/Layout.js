@@ -1,14 +1,14 @@
 import Head from "next/head";
 import Link from "next/link";
 
-export default function Layout({ children, title = "HP by Nextjs" }) {
+export default function Layout({ children, title = "Portfolio by Nextjs" }) {
   return (
     <div className="flex flex-col items-center justify-center min-h-screen font-mono text-sm text-gray-600">
       <Head>
         <title>{title}</title>
       </Head>
       <header>
-        <nav className="w-screen bg-gray-800">
+        <nav className="w-screen bg-black">
           <div className="flex items-center pl-8 h-14">
             <div className="flex space-x-4">
               <Link href="/">
@@ -16,12 +16,17 @@ export default function Layout({ children, title = "HP by Nextjs" }) {
                   Home
                 </a>
               </Link>
-              <Link href="/blog-page">
+              <Link href="/about">
                 <a className="px-3 py-2 text-gray-300 rounded hover:bg-gray-700">
-                  Blog
+                  About
                 </a>
               </Link>
-              <Link href="/contact-page">
+              <Link href="/resume">
+                <a className="px-3 py-2 text-gray-300 rounded hover:bg-gray-700">
+                  Resume
+                </a>
+              </Link>
+              <Link href="/contact">
                 <a className="px-3 py-2 text-gray-300 rounded hover:bg-gray-700">
                   Contact
                 </a>
@@ -31,18 +36,21 @@ export default function Layout({ children, title = "HP by Nextjs" }) {
         </nav>
       </header>
       <main className="flex flex-col items-center justify-center flex-1 w-screen">
-        {children}
-      </main>
-      <footer className="flex items-center justify-center w-full h-12 border-t">
-        <a
-          className="flex items-center"
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
+        <div
+          className="flex flex-col items-center justify-center w-full max-h-screen text-center"
+          style={{
+            backgroundImage: "url(/birdBg.jpg)",
+            backgroundSize: "cover",
+            height: "87vh",
+          }}
         >
-          Powered by{" "}
-          <img src="/vercel.svg" alt="Vercel Logo" className="h-4 ml-2" />
-        </a>
+          {children}
+        </div>
+      </main>
+      <footer className="flex items-center justify-center w-full h-12 bg-black">
+        <p className="text-xs text-center text-gray-500">
+          Copyright © 2021 Taichi Tomioka | All rights reserved
+        </p>
       </footer>
     </div>
   );
