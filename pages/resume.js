@@ -11,9 +11,9 @@ import {
 export default function Resume() {
   return (
     <Layout title="Resume">
-      <div className="p-4">
-        <p className="m-4 font-mono text-lg font-bold text-white">Resume</p>
-        <div className="h-full m-4 overflow-y-scroll leading-relaxed text-center text-white md:w-8/12 overscroll-y-auto sm:w-full">
+      <div className="h-full p-4">
+        <p className="mt-20 font-mono text-lg font-bold text-white">Resume</p>
+        <div className="mx-auto overflow-y-scroll leading-relaxed text-center text-white h-4/6 md:w-full overscroll-y-auto sm:w-full md:mt-10">
           <ResumeItem {...resumeObjOne} />
           <ResumeItem {...resumeObjTwo} />
           <ResumeItem {...resumeObjThree} />

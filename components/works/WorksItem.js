@@ -11,7 +11,7 @@ export default function WorksItem({ title, img, alt, desc }) {
         height={250}
         className="rounded-t-lg"
       />
-      <div className="items-center justify-center p-2 text-gray-500">
+      <div className="flex-wrap items-center justify-center p-2 text-xs text-gray-500">
         <h3 className="font-bold">{title}</h3>
         <p>{desc}</p>
       </div>

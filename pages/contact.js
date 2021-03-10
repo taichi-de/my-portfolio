@@ -5,7 +5,7 @@ import { FaTwitterSquare, FaGithubSquare, FaLinkedin } from "react-icons/fa";
 export default function Contact() {
   return (
     <Layout title="Contact">
-      <div className="p-8 text-center bg-gray-200 shadow-xl rounded-xl w-80">
+      <div className="p-6 text-center bg-gray-200 shadow-xl rounded-xl w-80">
         <div className="mb-4">
           <p className="font-bold">Contant info</p>
         </div>
@@ -38,7 +38,7 @@ export default function Contact() {
           </a>
         </div>
       </div>
-      <div className="flex items-center justify-center p-8 text-center bg-gray-200 border-t-2 border-gray-400 border-dashed shadow-xl rounded-xl w-80">
+      <div className="flex items-center justify-center p-6 text-center bg-gray-200 border-t-2 border-gray-400 border-dashed shadow-xl rounded-xl w-80">
         <form className="text-left" action="contact.php" method="post">
           <label className="block">
             <span className="block mb-2 text-sm font-bold text-gray-700">
@@ -79,7 +79,7 @@ export default function Contact() {
             />
           </label>
           <input
-            class="bg-gray-500 hover:bg-indigo-700 text-white mt-2 font-sm py-2 px-4 rounded focus:outline-none focus:shadow-outline"
+            class="bg-gray-500 hover:bg-green-700 text-white mt-2 font-sm py-2 px-4 rounded focus:outline-none focus:shadow-outline"
             type="submit"
             value="Submit"
             id="contact-submit"

@@ -4,7 +4,7 @@ import Image from "next/image";
 export default function About() {
   return (
     <Layout title="About">
-      <div className="p-8 overflow-y-scroll leading-loose text-center text-white md:w-8/12 overscroll-y-auto h-4/5 sm:w-full">
+      <div className="p-8 overflow-y-scroll leading-loose text-center text-white md:w-4/12 overscroll-y-auto h-4/5 sm:w-full">
         <div className="mb-4">
           <p className="mb-4 font-mono text-lg text-bold">About me</p>
         </div>
@@ -29,7 +29,7 @@ export default function About() {
           <p className="my-3">
             Skills：
             <br />
-            HTML / CSS(Sass) / JavaScript(jQuery, React, TS, Nexis) /
+            HTML / CSS(Sass) / JavaScript(jQuery, React, TS, Nexjs) /
             Ruby(Rails) / GraphQL / Slim / Wordpress
           </p>
           <p className="my-3">
