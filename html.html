@@ -1,0 +1,82 @@
+<div className="contact-form">
+  <form action="../../contact.php" className="contact-form-area" method="post">
+    <div className="row">
+      <div className="col-md-6">
+        <input id="form-name" name="name" placeholder="Name" type="text" />
+      </div>
+      <div className="col-md-6">
+        <input id="form-email" name="email" placeholder="Email" type="text" />
+      </div>
+    </div>
+    <div className="row">
+      <div className="col-md-12">
+        <input
+          id="form-subject"
+          name="subject"
+          placeholder="Title"
+          type="text"
+        />
+      </div>
+    </div>
+    <div className="row">
+      <div className="col-md-12">
+        <textarea
+          id="form-message"
+          name="message"
+          placeholder="Content"
+        ></textarea
+        ><input
+          className="clearfix submit-btn btn-style1"
+          id="contact-submit"
+          type="submit"
+          value="Send"
+        />
+        <div className="result"></div>
+      </div>
+    </div>
+  </form>
+</div>
+
+<div className="contact-form">
+  <form className="contact-form-area" action="contact.php" method="post">
+    <div className="row">
+      <div className="col-md-6">
+        <input type="text" name="name" placeholder="名前" id="form-name" />
+      </div>
+      <div className="col-md-6">
+        <input
+          type="text"
+          name="email"
+          placeholder="メールアドレス"
+          id="form-email"
+        />
+      </div>
+    </div>
+    <div className="row">
+      <div className="col-md-12">
+        <input
+          type="text"
+          name="subject"
+          placeholder="タイトル"
+          id="form-subject"
+        />
+      </div>
+    </div>
+    <div className="row">
+      <div className="col-md-12">
+        <textarea
+          placeholder="お問い合わせ内容"
+          name="message"
+          id="form-message"
+        ></textarea>
+        <input
+          type="submit"
+          className="clearfix submit-btn btn-style1"
+          value="送信"
+          id="contact-submit"
+        />
+        <div className="result"></div>
+      </div>
+    </div>
+  </form>
+</div>

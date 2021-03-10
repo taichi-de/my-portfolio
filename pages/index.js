@@ -11,7 +11,7 @@ export default function Home() {
         <p className="m-5 font-serif font-black text-gray-300 text-md">
           A web developer, studied in Akita, based in Germany.
         </p>
-        <div className="flex items-center justify-center w-full text-center social-icons">
+        <div className="flex items-center justify-center w-full text-center">
           <a href="https://twitter.com/4_edkeils" target="_blank">
             <FaTwitterSquare className="mr-3 text-gray-300 w-7 h-7 hover:text-blue-400" />
           </a>
