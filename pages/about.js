@@ -6,7 +6,7 @@ export default function About() {
     <Layout title="About">
       <div className="p-8 overflow-y-scroll leading-loose text-center text-white md:w-8/12 overscroll-y-auto h-4/5 sm:w-full">
         <div className="mb-4">
-          <p className="font-mono text-lg text-bold">About me</p>
+          <p className="mb-4 font-mono text-lg text-bold">About me</p>
         </div>
         <div className="flex justify-center m-4">
           <Image
@@ -29,7 +29,7 @@ export default function About() {
           <p className="my-3">
             Skills：
             <br />
-            HTML / CSS(Sass) / JavaScript(jQuery, React, TS, Nextjs) /
+            HTML / CSS(Sass) / JavaScript(jQuery, React, TS, Nexis) /
             Ruby(Rails) / GraphQL / Slim / Wordpress
           </p>
           <p className="my-3">

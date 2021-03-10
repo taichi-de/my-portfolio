@@ -28,19 +28,19 @@ export default function Navbar({ toggle }) {
           </svg>
         </div>
         <div className="hidden pr-8 md:block">
-          <Link className="p-4" href="/about">
+          <Link className="p-4" href="/About">
             {" "}
             About{" "}
           </Link>
-          <Link className="p-4" href="/resume">
+          <Link className="p-4" href="/Resume">
             {" "}
             Resume{" "}
           </Link>
-          <Link className="p-4" href="/portfolio">
+          <Link className="p-4" href="/Portfolio">
             {" "}
             Portfolio{" "}
           </Link>
-          <Link className="p-4" href="/contact">
+          <Link className="p-4" href="/Contact">
             {" "}
             Contact
           </Link>

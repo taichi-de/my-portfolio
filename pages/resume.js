@@ -1,25 +1,25 @@
 import Layout from "../components/Layout";
-import ResumeItem from "./ResumeItem";
+import ResumeItem from "../components/resume/ResumeItem";
 import {
   resumeObjOne,
   resumeObjTwo,
   resumeObjThree,
   resumeObjFour,
   resumeObjFive,
-} from "./ResumeData";
+} from "../components/resume/ResumeData";
 
 export default function Resume() {
   return (
     <Layout title="Resume">
-      <div className="flex flex-col items-center justify-center w-8/12 leading-relaxed text-center text-white ">
-        <div className="m-4">
-          <p className="font-mono text-lg font-bold">Resume</p>
+      <div className="p-4">
+        <p className="m-4 font-mono text-lg font-bold text-white">Resume</p>
+        <div className="h-full m-4 overflow-y-scroll leading-relaxed text-center text-white md:w-8/12 overscroll-y-auto sm:w-full">
+          <ResumeItem {...resumeObjOne} />
+          <ResumeItem {...resumeObjTwo} />
+          <ResumeItem {...resumeObjThree} />
+          <ResumeItem {...resumeObjFour} />
+          <ResumeItem {...resumeObjFive} />
         </div>
-        <ResumeItem {...resumeObjOne} />
-        <ResumeItem {...resumeObjTwo} />
-        <ResumeItem {...resumeObjThree} />
-        <ResumeItem {...resumeObjFour} />
-        <ResumeItem {...resumeObjFive} />
       </div>
     </Layout>
   );

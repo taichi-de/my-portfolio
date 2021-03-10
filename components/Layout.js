@@ -5,25 +5,25 @@ import Navbar from "../pages/Navbar";
 import Dropdown from "../pages/Dropdown";
 
 export default function Layout({ children, title = "Portfolio by Nextjs" }) {
-  const [isOpen, setIsOpen] = useState(false);
+  // const [isOpen, setIsOpen] = useState(false);
 
-  const toggle = () => {
-    setIsOpen(!isOpen);
-  };
+  // const toggle = () => {
+  //   setIsOpen(!isOpen);
+  // };
 
-  useEffect(() => {
-    const hideMenu = () => {
-      if (window.innerWidth > 768 && isOpen) {
-        setIsOpen(false);
-      }
-    };
+  // useEffect(() => {
+  //   const hideMenu = () => {
+  //     if (window.innerWidth > 768 && isOpen) {
+  //       setIsOpen(false);
+  //     }
+  //   };
 
-    window.addEventListener("resize", hideMenu);
+  //   window.addEventListener("resize", hideMenu);
 
-    return () => {
-      window.removeEventListener("resize", hideMenu);
-    };
-  });
+  //   return () => {
+  //     window.removeEventListener("resize", hideMenu);
+  //   };
+  // });
   return (
     <div className="flex flex-col items-center justify-center min-h-screen font-mono text-sm text-gray-600">
       <Head>
@@ -35,29 +35,39 @@ export default function Layout({ children, title = "Portfolio by Nextjs" }) {
       {/* <Dropdown isOpen={isOpen} toggle={toggle}></Dropdown> */}
       <header className="absolute top-0 z-20">
         <nav
-          className="flex items-center justify-between w-screen h-16 font-mono text-gray-500 bg-black shadow-sm"
+          className="flex items-center justify-between w-screen h-16 p-2 font-mono text-gray-500 bg-black shadow-sm sm:flex-none"
           role="navigation"
         >
-          <Link href="/" className="pl-8">
-            <a className="py-2 pl-8 font-serif text-lg font-bold text-gray-300">
-              TAIZEN
-            </a>
+          <Link
+            href="/"
+            className="font-serif text-lg font-bold text-gray-300 md:pl-8"
+          >
+            TAIZEN
           </Link>
           <div className="pr-8">
-            <Link href="/About">
-              <a className="px-3 py-2 text-gray-300 rounded hover:bg-gray-700">
-                About
-              </a>
+            <Link
+              href="/About"
+              className="px-3 py-2 text-gray-300 rounded hover:bg-gray-700"
+            >
+              About
             </Link>
-            <Link href="/Resume">
-              <a className="px-3 py-2 text-gray-300 rounded hover:bg-gray-700">
-                Resume
-              </a>
+            <Link
+              href="/Resume"
+              className="px-3 py-2 text-gray-300 rounded hover:bg-gray-700"
+            >
+              Resume
             </Link>
-            <Link href="/Contact">
-              <a className="px-3 py-2 text-gray-300 rounded hover:bg-gray-700">
-                Contact
-              </a>
+            <Link
+              href="/Works"
+              className="px-3 py-2 text-gray-300 rounded hover:bg-gray-700"
+            >
+              Works
+            </Link>
+            <Link
+              href="/Contact"
+              className="px-3 py-2 text-gray-300 rounded hover:bg-gray-700"
+            >
+              Contact
             </Link>
           </div>
         </nav>

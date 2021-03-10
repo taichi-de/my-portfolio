@@ -78,20 +78,12 @@ export default function Contact() {
               required
             />
           </label>
-          {/* <input
-            type="submit"
-            className="clearfix submit-btn btn-style1"
-            value="Submit"
-            id="contact-submit"
-          /> */}
-          <button
+          <input
             class="bg-gray-500 hover:bg-indigo-700 text-white mt-2 font-sm py-2 px-4 rounded focus:outline-none focus:shadow-outline"
             type="submit"
             value="Submit"
             id="contact-submit"
-          >
-            Submit
-          </button>
+          />
           <div className="result"></div>
         </form>
       </div>
