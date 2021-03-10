@@ -5,15 +5,15 @@ export const resumeObjOne = {
 };
 
 export const resumeObjTwo = {
-  year: "2014-2019",
-  subtitle: "Akita Prefectural University",
-  desc: "Senior project: hydroponic culture",
-};
-
-export const resumeObjThree = {
   year: "2019-",
   subtitle: "freelance web developer",
   desc: "graduade ▶︎ work as a waiter ▶︎ move to germany",
+};
+
+export const resumeObjThree = {
+  year: "2014-2019",
+  subtitle: "Akita Prefectural University",
+  desc: "Senior project: hydroponic culture",
 };
 
 export const resumeObjFour = {

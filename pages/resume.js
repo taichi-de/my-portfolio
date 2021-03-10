@@ -11,7 +11,7 @@ import {
 export default function resume() {
   return (
     <Layout title="Resume">
-      <div className="items-center justify-center w-8/12 leading-relaxed text-center text-white ">
+      <div className="flex flex-col items-center justify-center w-8/12 leading-relaxed text-center text-white ">
         <div className="m-4">
           <p className="font-mono text-lg font-bold">Resume</p>
         </div>
