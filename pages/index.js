@@ -1,18 +1,31 @@
 import Layout from "../components/Layout";
+import Link from "next/link";
+import { FaTwitterSquare, FaGithubSquare, FaLinkedin } from "react-icons/fa";
+
 export default function Home() {
   return (
     <Layout title="Home">
-      <div
-        className="flex flex-col items-center justify-center w-full max-h-screen text-center"
-        style={{
-          backgroundImage: "url(/bg-image4.jpg)",
-          backgroundSize: "cover",
-          height: "87vh"
-        }}
-      >
-        <p className="font-serif font-black text-white text-7xl">
-          Welcome to Next.js
+      <div className="welcome-text">
+        <h1 className="font-serif text-5xl font-black text-gray-300">
+          I'm Taichi Tomioka
+        </h1>
+        <p className="m-5 font-serif font-black text-gray-300 text-md">
+          A web developer, studied in Akita, based in Germany.
         </p>
+        <div className="flex items-center justify-center w-full text-center">
+          <Link href="https://twitter.com/4_edkeils" target="_blank">
+            <FaTwitterSquare className="mr-3 text-gray-300 w-7 h-7 hover:text-blue-400" />
+          </Link>
+          <Link href="https://github.com/taichi-de" target="_blank">
+            <FaGithubSquare className="mr-3 text-gray-300 w-7 h-7 hover:text-gray-600" />
+          </Link>
+          <Link
+            href="https://www.linkedin.com/in/taichi-tomioka-746241191/"
+            target="_blank"
+          >
+            <FaLinkedin className="text-gray-300 w-7 h-7 hover:text-blue-700" />
+          </Link>
+        </div>
       </div>
     </Layout>
   );
