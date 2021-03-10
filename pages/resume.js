@@ -6,9 +6,9 @@ import {
   resumeObjThree,
   resumeObjFour,
   resumeObjFive,
-} from "./resumeData";
+} from "./ResumeData";
 
-export default function resume() {
+export default function Resume() {
   return (
     <Layout title="Resume">
       <div className="flex flex-col items-center justify-center w-8/12 leading-relaxed text-center text-white ">
