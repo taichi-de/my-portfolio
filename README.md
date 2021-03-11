@@ -1,15 +1,3 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with `create-next-app`.
+## This is a [My latest portfolio](https://taizen.vercel.app/) project that I made & uploaded with Vercel.
 
-## And here is the [work](https://nextjs-homepage.vercel.app/) that I made & uploaded with Netlify.
-
-### Getting Started
-
-First, run the development server:
-
-```bash
-npm run dev
-# or
-yarn dev
-```
-
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### Made by Nextjs & TailwindCSS & Vercel
