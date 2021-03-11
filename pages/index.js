@@ -13,16 +13,13 @@ export default function Home() {
           A web developer, studied in Akita, based in Germany.
         </p>
         <div className="flex items-center justify-center w-full text-center">
-          <Link href="https://twitter.com/4_edkeils" target="_blank">
+          <Link href="https://twitter.com/4_edkeils">
             <FaTwitterSquare className="mr-3 text-gray-300 w-7 h-7 hover:text-blue-400" />
           </Link>
-          <Link href="https://github.com/taichi-de" target="_blank">
+          <Link href="https://github.com/taichi-de">
             <FaGithubSquare className="mr-3 text-gray-300 w-7 h-7 hover:text-gray-600" />
           </Link>
-          <Link
-            href="https://www.linkedin.com/in/taichi-tomioka-746241191/"
-            target="_blank"
-          >
+          <Link href="https://www.linkedin.com/in/taichi-tomioka-746241191/">
             <FaLinkedin className="text-gray-300 w-7 h-7 hover:text-blue-700" />
           </Link>
         </div>

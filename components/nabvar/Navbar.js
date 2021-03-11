@@ -2,9 +2,9 @@ import Link from "next/link";
 
 export const Navbar = ({ toggle }) => {
   return (
-    <div className="absolute top-0 z-20">
+    <div className="fixed top-0 z-20">
       <nav
-        className="relative flex items-center justify-between w-screen h-16 p-2 font-mono text-gray-500 bg-black shadow-sm sm:h-10 md:px-8 sm:px-4"
+        className="relative flex items-center justify-between w-screen p-4 font-mono text-gray-500 bg-black shadow-sm md:h-16 sm:h-10 md:px-8 sm:px-4"
         role="navigation"
       >
         <Link href="/">

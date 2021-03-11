@@ -60,7 +60,7 @@ export default function Contact() {
             <input
               type="email"
               className="w-full px-4 py-2 text-sm leading-tight text-gray-700 bg-white border-gray-200 rounded appearance-none border-1 focus:outline-none focus:border-purple-500"
-              placeholder="john@example.com"
+              placeholder="hello@example.com"
               name="email"
               id="email"
               required

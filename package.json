@@ -17,7 +17,6 @@
   },
   "devDependencies": {
     "autoprefixer": "^10.2.4",
-    "playwright": "^1.9.2",
     "postcss": "^8.2.6",
     "tailwindcss": "^2.0.3"
   }
