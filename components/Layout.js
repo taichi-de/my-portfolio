@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from "react";
 import Head from "next/head";
 import Link from "next/link";
-import Navbar from "../pages/Navbar";
-import Dropdown from "../pages/Dropdown";
+import { Navbar } from "./nabvar/Navbar";
+import { Dropdown } from "./nabvar/Dropdown";
 
 export default function Layout({ children, title = "Portfolio by Nextjs" }) {
   const [isOpen, setIsOpen] = useState(false);
@@ -29,11 +29,9 @@ export default function Layout({ children, title = "Portfolio by Nextjs" }) {
       <Head>
         <title>{title}</title>
       </Head>
-      {/* <Navbar toggle={toggle}>
-        <div></div>
-      </Navbar> */}
-      {/* <Dropdown isOpen={isOpen} toggle={toggle}></Dropdown> */}
-      <header className="absolute top-0 z-20">
+      <Navbar toggle={toggle} />
+      <Dropdown isOpen={isOpen} toggle={toggle} />
+      {/* <header className="absolute top-0 z-20">
         <nav
           className="flex items-center justify-between w-screen h-16 p-2 font-mono text-gray-500 bg-black shadow-sm"
           role="navigation"
@@ -66,7 +64,7 @@ export default function Layout({ children, title = "Portfolio by Nextjs" }) {
             </Link>
           </div>
         </nav>
-      </header>
+      </header> */}
       <main className="flex flex-col items-center justify-center flex-1 w-screen">
         <div
           className="relative z-10 flex flex-col items-center justify-center w-full h-screen text-center bg-no-repeat bg-cover"
