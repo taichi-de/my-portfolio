@@ -29,22 +29,22 @@ export const Navbar = ({ toggle }) => {
           </svg>
         </div>
         <div className="hidden pr-8 md:block">
-          <Link href="/About">
+          <Link href="/about">
             <a className="px-3 py-2 text-gray-300 rounded hover:bg-gray-700">
               About
             </a>
           </Link>
-          <Link href="/Resume">
+          <Link href="/resume">
             <a className="px-3 py-2 text-gray-300 rounded hover:bg-gray-700">
               Resume
             </a>
           </Link>
-          <Link href="/Works">
+          <Link href="/works">
             <a className="px-3 py-2 text-gray-300 rounded hover:bg-gray-700">
               Works
             </a>
           </Link>
-          <Link href="/Contact">
+          <Link href="/contact">
             <a className="px-3 py-2 text-gray-300 rounded hover:bg-gray-700">
               Contact
             </a>
