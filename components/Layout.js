@@ -27,6 +27,14 @@ export default function Layout({ children, title = "Portfolio by Nextjs" }) {
     <div className="flex flex-col items-center justify-center min-h-screen font-mono text-sm text-gray-600">
       <Head>
         <title>{title}</title>
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:site" content="@4_edkeils" />
+        <meta name="twitter:title" content="TAIZEN-DEV.com" />
+        <meta
+          name="twitter:description"
+          content="Taizen is Taichi Tomioka's portfolio&blog"
+        />
+        <meta name="twitter:image" content="${baseUrl}/public/portfolio.png" />
       </Head>
       <Navbar toggle={toggle} />
       <Dropdown isOpen={isOpen} toggle={toggle} />
@@ -40,7 +48,7 @@ export default function Layout({ children, title = "Portfolio by Nextjs" }) {
           {children}
         </div>
       </main>
-      <footer className="absolute bottom-0 z-20 flex items-center justify-center w-full h-12 bg-black">
+      <footer className="absolute bottom-0 z-20 items-center justify-center hidden w-full h-12 bg-black md:block">
         <p className="px-2 text-xs text-center text-gray-500">
           Copyright © 2021 TAIZEN | All rights reserved
         </p>

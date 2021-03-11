@@ -4,15 +4,13 @@ export const Navbar = ({ toggle }) => {
   return (
     <div className="absolute top-0 z-20">
       <nav
-        className="relative flex items-center justify-between w-screen h-16 p-2 font-mono text-gray-500 bg-black shadow-sm"
+        className="relative flex items-center justify-between w-screen h-16 p-2 font-mono text-gray-500 bg-black shadow-sm sm:h-10 md:px-8 sm:px-4"
         role="navigation"
       >
         <Link href="/">
-          <a className="pl-8 font-serif text-lg font-bold text-gray-300 ">
-            TAIZEN
-          </a>
+          <a className="font-serif text-lg font-bold text-gray-300 ">TAIZEN</a>
         </Link>
-        <div className="px-4 cursor-pointer md:hidden" onClick={toggle}>
+        <div className="cursor-pointer md:hidden" onClick={toggle}>
           <svg
             className="w-6 h-6"
             fill="none"
