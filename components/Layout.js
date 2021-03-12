@@ -30,11 +30,11 @@ export default function Layout({ children, title = "Portfolio by Nextjs" }) {
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:site" content="@4_edkeils" />
         <meta name="twitter:title" content="TAIZEN-DEV.com" />
+        <meta name="twitter:description" content="Taichi's portfolio & blog" />
         <meta
-          name="twitter:description"
-          content="Taizen is Taichi's portfolio & blog"
+          name="twitter:image"
+          content="https://taizen-dev.com/public/portfolio.png"
         />
-        <meta name="twitter:image" content="${baseUrl}/public/portfolio.png" />
       </Head>
       <Navbar toggle={toggle} />
       <Dropdown isOpen={isOpen} toggle={toggle} />
