@@ -2,26 +2,35 @@ import Layout from "../components/Layout";
 import Post from "../components/Post";
 import { getAllPostsData } from "../lib/posts";
 
-export default function Blog({ posts }) {
+import Link from "next/link";
+
+export default function Blog({ blog }) {
   return (
-    <Layout title="Blog">
-      <div
-        className="overflow-y-scroll"
-        style={{
-          maxHeight: "80vh"
-        }}
-      >
-        <ul>
-          {posts && posts.map(post => <Post key={post.id} post={post} />)}
-        </ul>
-      </div>
-    </Layout>
+    <div>
+      <ul>
+        {blog.map((blog) => (
+          <li key={blog.id}>
+            <Link href={`blog/${blog.id}`}>
+              <a>{blog.title}</a>
+            </Link>
+          </li>
+        ))}
+      </ul>
+    </div>
   );
 }
 
-export async function getStaticProps() {
-  const posts = await getAllPostsData();
-  return {
-    props: { posts }
+// データをテンプレートに受け渡す部分の処理を記述します
+export const getStaticProps = async () => {
+  const key = {
+    headers: { "X-API-KEY": process.env.API_KEY },
   };
-}
+  const data = await fetch("https://taizen-dev.microcms.io/api/v1/blog", key)
+    .then((res) => res.json())
+    .catch(() => null);
+  return {
+    props: {
+      blog: data.contents,
+    },
+  };
+};
