@@ -1,26 +1,29 @@
 import Layout from "../components/Layout";
-import Post from "../components/Post";
-import { getAllPostsData } from "../lib/posts";
-
 import Link from "next/link";
 
 export default function Blog({ blog }) {
   return (
     <Layout title="Blog">
-      <ul>
-        {blog.map((blog) => (
-          <li key={blog.id}>
-            <Link href={`blog/${blog.id}`}>
-              <a>{blog.title}</a>
-            </Link>
-          </li>
-        ))}
-      </ul>
+      <div className="w-3/4 p-6 m-6 text-center bg-gray-200 shadow-xl rounded-xl">
+        <div className="mb-4">
+          <p className="font-bold">Achieve</p>
+        </div>
+        <div className="text-left">
+          <ul>
+            {blog.map((blog) => (
+              <li key={blog.id}>
+                <Link href={`blog/${blog.id}`}>
+                  <a>{blog.title}</a>
+                </Link>
+              </li>
+            ))}
+          </ul>
+        </div>
+      </div>
     </Layout>
   );
 }
 
-// データをテンプレートに受け渡す部分の処理を記述します
 export const getStaticProps = async () => {
   const key = {
     headers: { "X-API-KEY": process.env.API_KEY },
