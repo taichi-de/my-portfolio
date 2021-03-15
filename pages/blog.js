@@ -1,27 +1,41 @@
 import Layout from "../components/Layout";
-import Post from "../components/Post";
-import { getAllPostsData } from "../lib/posts";
+import Link from "next/link";
 
-export default function Blog({ posts }) {
+export default function Blog({ blog }) {
   return (
     <Layout title="Blog">
-      <div
-        className="overflow-y-scroll"
-        style={{
-          maxHeight: "80vh"
-        }}
-      >
-        <ul>
-          {posts && posts.map(post => <Post key={post.id} post={post} />)}
-        </ul>
+      <div className="flex-col justify-center w-3/5 p-6 m-6 text-center bg-gray-200 shadow-xl rounded-xl">
+        <div className="mb-4">
+          <p className="font-bold">Achieve</p>
+        </div>
+        <div className="text-left pl-80">
+          <ul>
+            {blog.map((blog) => (
+              <li key={blog.id}>
+                <Link href={`blog/${blog.id}`}>
+                  <a className="py-4 my-2 border-b border-gray-300 font-base">
+                    {blog.title}
+                  </a>
+                </Link>
+              </li>
+            ))}
+          </ul>
+        </div>
       </div>
     </Layout>
   );
 }
 
-export async function getStaticProps() {
-  const posts = await getAllPostsData();
-  return {
-    props: { posts }
+export const getStaticProps = async () => {
+  const key = {
+    headers: { "X-API-KEY": process.env.API_KEY },
   };
-}
+  const data = await fetch("https://taizen-dev.microcms.io/api/v1/blog", key)
+    .then((res) => res.json())
+    .catch(() => null);
+  return {
+    props: {
+      blog: data.contents,
+    },
+  };
+};

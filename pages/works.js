@@ -16,7 +16,7 @@ export default function Works() {
     <Layout title="Works">
       <div className="h-full p-4">
         <p className="font-mono text-lg font-bold text-white mt-14">Works</p>
-        <div className="grid w-9/12 grid-cols-1 mx-auto my-4 overflow-y-scroll leading-relaxed text-center text-white h-2/3 overscroll-y-auto sm:grid-cols-3">
+        <div className="grid w-2/3 grid-cols-1 mx-auto my-4 overflow-y-scroll leading-relaxed text-center text-white h-2/3 overscroll-y-auto sm:grid-cols-3">
           <WorksItem {...worksObjOne} />
           <WorksItem {...worksObjTwo} />
           <WorksItem {...worksObjThree} />
