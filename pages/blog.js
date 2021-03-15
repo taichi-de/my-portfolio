@@ -6,7 +6,7 @@ import Link from "next/link";
 
 export default function Blog({ blog }) {
   return (
-    <div>
+    <Layout title="Blog">
       <ul>
         {blog.map((blog) => (
           <li key={blog.id}>
@@ -16,7 +16,7 @@ export default function Blog({ blog }) {
           </li>
         ))}
       </ul>
-    </div>
+    </Layout>
   );
 }
 

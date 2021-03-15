@@ -24,6 +24,11 @@ export const Dropdown = ({ isOpen }) => {
           Works
         </a>
       </Link>
+      <Link href="/blog">
+        <a className="px-3 py-2 text-gray-300 rounded hover:bg-gray-700">
+          Blog
+        </a>
+      </Link>
       <Link href="/contact">
         <a className="px-3 py-2 text-gray-300 rounded hover:bg-gray-700">
           Contact
