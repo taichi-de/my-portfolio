@@ -1,5 +1,4 @@
 import { useState } from "react";
-import Router from "next/router";
 import Layout from "../components/Layout";
 import { MdLocationOn, MdEmail } from "react-icons/md";
 import { FaTwitterSquare, FaGithubSquare, FaLinkedin } from "react-icons/fa";
@@ -78,7 +77,7 @@ export default function Contact() {
             <FaTwitterSquare className="mr-3 text-gray-500 w-7 h-7 hover:text-blue-400" />
           </a>
           <a href="https://github.com/taichi-de" target="_blank">
-            <FaGithubSquare className="mr-3 text-gray-500 w-7 h-7 hover:text-gray-600" />
+            <FaGithubSquare className="mr-3 text-gray-500 w-7 h-7 hover:text-gray-700" />
           </a>
           <a
             href="https://www.linkedin.com/in/taichi-tomioka-746241191/"
@@ -106,7 +105,7 @@ export default function Contact() {
                   className="w-full px-4 py-2 text-sm leading-tight text-gray-700 bg-white border-gray-200 rounded appearance-none border-1 focus:outline-none focus:border-purple-500"
                   type="text"
                   name="name"
-                  placeholder="name"
+                  placeholder="Your name"
                   onChange={handleChange}
                   required
                 />
