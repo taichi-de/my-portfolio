@@ -10,7 +10,7 @@ export default function Contact() {
     subject: "Contact",
     honeypot: "",
     message: "",
-    replyTo: "@",
+    replyTo: "gciuzi52@gmail.com",
     accessKey: process.env.access_key,
   });
 
@@ -89,7 +89,6 @@ export default function Contact() {
       </div>
       <div className="flex items-center justify-center p-6 text-center bg-gray-200 border-t-2 border-gray-400 border-dashed shadow-xl rounded-xl w-80">
         <div>
-          <p>{response.message}</p>
           <form
             action="https://api.staticforms.xyz/submit"
             method="post"
@@ -137,6 +136,7 @@ export default function Contact() {
               />
             </label>
             <input type="text" name="honeypot" style={{ display: "none" }} />
+            <p className="p-1 text-blue-500">{response.message}</p>
             <input
               className="px-4 py-2 mt-2 text-white bg-gray-500 rounded hover:bg-green-700 font-sm focus:outline-none focus:shadow-outline"
               type="submit"
