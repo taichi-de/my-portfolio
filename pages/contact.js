@@ -1,7 +1,7 @@
 import { useState } from "react";
 import Layout from "../components/Layout";
 import { MdLocationOn, MdEmail } from "react-icons/md";
-import { FaTwitterSquare, FaGithubSquare, FaLinkedin } from "react-icons/fa";
+import { FaInstagramSquare, FaGithubSquare, FaLinkedin } from "react-icons/fa";
 
 export default function Contact() {
   const [contact, setContact] = useState({
@@ -73,8 +73,8 @@ export default function Contact() {
           </div>
         </div>
         <div className="flex items-center justify-center w-full mt-4 text-center">
-          <a href="https://twitter.com/4_edkeils" target="_blank">
-            <FaTwitterSquare className="mr-3 text-gray-500 w-7 h-7 hover:text-blue-400" />
+          <a href="https://www.instagram.com/taichi_tomi/" target="_blank">
+            <FaInstagramSquare className="mr-3 text-gray-500 w-7 h-7 hover:text-pink-500" />
           </a>
           <a href="https://github.com/taichi-de" target="_blank">
             <FaGithubSquare className="mr-3 text-gray-500 w-7 h-7 hover:text-gray-700" />

@@ -1,6 +1,6 @@
 import Layout from "../components/Layout";
 import Link from "next/link";
-import { FaTwitterSquare, FaGithubSquare, FaLinkedin } from "react-icons/fa";
+import { FaInstagramSquare, FaGithubSquare, FaLinkedin } from "react-icons/fa";
 
 export default function Home() {
   return (
@@ -13,8 +13,8 @@ export default function Home() {
           A web developer, studied in Akita, based in Germany.
         </p>
         <div className="flex items-center justify-center w-full text-center">
-          <Link href="https://twitter.com/4_edkeils">
-            <FaTwitterSquare className="mr-3 text-gray-300 w-7 h-7 hover:text-blue-400" />
+          <Link href="https://www.instagram.com/taichi_tomi/">
+            <FaInstagramSquare className="mr-3 text-gray-300 w-7 h-7 hover:text-pink-500" />
           </Link>
           <Link href="https://github.com/taichi-de">
             <FaGithubSquare className="mr-3 text-gray-300 w-7 h-7 hover:text-gray-600" />
