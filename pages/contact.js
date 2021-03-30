@@ -138,7 +138,7 @@ export default function Contact() {
             <input type="text" name="honeypot" style={{ display: "none" }} />
             <p className="p-1 text-blue-500">{response.message}</p>
             <input
-              className="px-4 py-2 mt-2 text-white bg-gray-500 rounded hover:bg-green-700 font-sm focus:outline-none focus:shadow-outline"
+              className="px-4 py-2 mt-2 text-white bg-gray-500 rounded cursor-pointer hover:bg-green-700 font-sm focus:outline-none focus:shadow-outline"
               type="submit"
               value="Submit"
               id="contact-submit"

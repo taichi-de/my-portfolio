@@ -58,5 +58,5 @@ export const worksObjNine = {
   title: "DemoLP",
   img: "/Demo_web.png",
   alt: "DemoLP",
-  desc: "HTML/Sass",
+  desc: "HTML/Sass/JQuery",
 };
