@@ -1,5 +1,6 @@
 import { useState } from "react";
 import Layout from "../components/Layout";
+import Icons from "../components/Icons";
 import { MdLocationOn, MdEmail } from "react-icons/md";
 import { FaInstagramSquare, FaGithubSquare, FaLinkedin } from "react-icons/fa";
 
@@ -72,20 +73,7 @@ export default function Contact() {
             </div>
           </div>
         </div>
-        <div className="flex items-center justify-center w-full mt-4 text-center">
-          <a href="https://www.instagram.com/taichi_tomi/" target="_blank">
-            <FaInstagramSquare className="mr-3 text-gray-500 w-7 h-7 hover:text-pink-500" />
-          </a>
-          <a href="https://github.com/taichi-de" target="_blank">
-            <FaGithubSquare className="mr-3 text-gray-500 w-7 h-7 hover:text-gray-700" />
-          </a>
-          <a
-            href="https://www.linkedin.com/in/taichi-tomioka-746241191/"
-            target="_blank"
-          >
-            <FaLinkedin className="text-gray-500 w-7 h-7 hover:text-blue-700" />
-          </a>
-        </div>
+        <Icons />
       </div>
       <div className="flex items-center justify-center p-6 text-center bg-gray-200 border-t-2 border-gray-400 border-dashed shadow-xl rounded-xl w-80">
         <div>

@@ -36,7 +36,7 @@ export default function Layout({ children, title = "Portfolio by Nextjs" }) {
         />
         <meta
           name="twitter:image"
-          content="https://taizen-dev.com/public/taizen-dev.png"
+          content="https://taizen-dev.com/taizen-dev.png"
         />
       </Head>
       <Navbar toggle={toggle} />

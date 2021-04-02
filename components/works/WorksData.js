@@ -44,7 +44,7 @@ export const worksObjSix = {
   title: "Portfolio",
   img: "/taizen-dev.png",
   alt: "portfolio",
-  desc: "Design/Next.js/TailwindCSS",
+  desc: "Next.js/TS/TailwindCSS",
 };
 
 export const worksObjEight = {
