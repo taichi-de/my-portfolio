@@ -29,18 +29,18 @@ export default function About() {
           <p className="my-3">
             Skills：
             <br />
-            HTML / CSS(Sass) / JavaScript(jQuery, React, TS, Nexjs) /
+            HTML / CSS(Sass) / JavaScript(React, TS, Nextjs) /
             Ruby(Rails) / GraphQL / Slim / Wordpress
           </p>
           <p className="my-3">
             Languages：
             <br />
-            Japanese + English / German
+            Japanese / English(B2) / German(C1)
           </p>
           <p className="my-3">
             Love：
             <br />
-            Movies & Coffee & Workout
+            Movies & Coffee & Green
           </p>
         </div>
       </div>
