@@ -35,7 +35,7 @@ export default function Works() {
           <WorksItem {...worksObjOne} />
         </div>
         <Link href={"https://github.com/taichi-de"}>
-          <div className="inline-flex items-center justify-center p-2 text-white bg-green-700 rounded-lg cursor-pointer w-60">
+          <div className="inline-flex items-center justify-center p-2 text-white bg-green-700 rounded-lg cursor-pointer w-60 hover:bg-yellow-500 hover:outline-none">
             See more in Github
             <FaGithub className="ml-3 text-gray-300 w-7 h-7 lg:text-sm md:text-xs hover:text-gray-600" />
           </div>
