@@ -12,6 +12,8 @@ import {
   worksObjSeven,
   worksObjEight,
   worksObjNine,
+  worksObjTen,
+  worksObjEleven,
 } from "../components/works/WorksData";
 
 export default function Works() {
@@ -20,15 +22,17 @@ export default function Works() {
       <div className="h-full p-4">
         <p className="font-mono text-lg font-bold text-white mt-14">Works</p>
         <div className="grid w-2/3 grid-cols-1 mx-auto my-4 overflow-y-scroll leading-relaxed text-center text-white h-2/3 overscroll-y-auto sm:grid-cols-3">
-          <WorksItem {...worksObjOne} />
-          <WorksItem {...worksObjTwo} />
-          <WorksItem {...worksObjSeven} />
-          <WorksItem {...worksObjThree} />
-          <WorksItem {...worksObjFour} />
-          <WorksItem {...worksObjFive} />
-          <WorksItem {...worksObjSix} />
-          <WorksItem {...worksObjEight} />
+          <WorksItem {...worksObjEleven} />
+          <WorksItem {...worksObjTen} />
           <WorksItem {...worksObjNine} />
+          <WorksItem {...worksObjEight} />
+          <WorksItem {...worksObjSeven} />
+          <WorksItem {...worksObjSix} />
+          <WorksItem {...worksObjFive} />
+          <WorksItem {...worksObjFour} />
+          <WorksItem {...worksObjThree} />
+          <WorksItem {...worksObjTwo} />
+          <WorksItem {...worksObjOne} />
         </div>
         <Link href={"https://github.com/taichi-de"}>
           <div className="inline-flex items-center justify-center p-2 text-white bg-green-700 rounded-lg cursor-pointer w-60">
