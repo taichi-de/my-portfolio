@@ -27,7 +27,6 @@ export const Navbar = ({ toggle }) => {
           </svg>
         </div>
         <div className="hidden pr-8 md:block">
-          {/* TODO: use map */}
           <Link href="/about">
             <a className="px-3 py-2 text-gray-300 rounded hover:bg-gray-700">
               About
