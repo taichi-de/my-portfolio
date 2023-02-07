@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import { navItems } from './Navbar';
 
 export const Dropdown = ({ isOpen }) => {
   return (
@@ -9,21 +10,13 @@ export const Dropdown = ({ isOpen }) => {
           : 'hidden'
       }
     >
-      <Link href="/about">
-        <a className="px-3 py-2 text-gray-300 rounded hover:bg-gray-700">About</a>
-      </Link>
-      <Link href="/resume">
-        <a className="px-3 py-2 text-gray-300 rounded hover:bg-gray-700">Resume</a>
-      </Link>
-      <Link href="/works">
-        <a className="px-3 py-2 text-gray-300 rounded hover:bg-gray-700">Works</a>
-      </Link>
-      <Link href="/linktree">
-        <a className="px-3 py-2 text-gray-300 rounded hover:bg-gray-700">Linktree</a>
-      </Link>
-      <Link href="/contact">
-        <a className="px-3 py-2 text-gray-300 rounded hover:bg-gray-700">Contact</a>
-      </Link>
+      {navItems.map((navItem) => {
+        return (
+          <Link href={navItem.path} className="px-3 py-2 text-gray-300 rounded hover:bg-gray-700" key={navItem.name}>
+            {navItem.name}
+          </Link>
+        );
+      })}
     </div>
   );
 };

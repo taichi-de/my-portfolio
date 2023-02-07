@@ -4,7 +4,7 @@ import Image from 'next/image';
 export default function About() {
   return (
     <Layout title="About">
-      <div className="p-8 overflow-y-scroll leading-loose text-center text-white md:w-4/12 overscroll-y-auto h-4/5 sm:w-full">
+      <div className="p-8 leading-loose text-center text-white md:w-4/12 scrollbar-hide overflow-auto h-4/5 sm:w-full">
         <div className="mb-4">
           <p className="mb-4 font-mono text-lg text-bold">About me</p>
         </div>
