@@ -5,11 +5,15 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start"
+    "start": "next start",
+    "format": "prettier --check ./",
+    "format:fix": "prettier --write ./",
+    "lint": "eslint ./",
+    "lint:fix": "eslint --fix ./"
   },
   "dependencies": {
     "cross-env": "^7.0.3",
-    "next": "10.0.7",
+    "next": "^13.1.6",
     "react": "17.0.1",
     "react-dom": "17.0.1",
     "react-icons": "^4.2.0"
@@ -19,8 +23,13 @@
     "@types/gtag.js": "^0.0.4",
     "@types/node": "^14.14.37",
     "@types/react": "^17.0.3",
+    "@typescript-eslint/eslint-plugin": "^5.51.0",
+    "@typescript-eslint/parser": "^5.51.0",
     "autoprefixer": "^10.2.4",
     "dotenv": "^8.2.0",
+    "eslint": "^8.33.0",
+    "eslint-plugin-functional": "^5.0.4",
+    "eslint-plugin-react": "^7.32.2",
     "postcss": "^8.2.6",
     "prettier": "^2.8.3",
     "tailwindcss": "^3.0.24",

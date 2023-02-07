@@ -1,5 +1,3 @@
-import React from 'react';
-
 export default function ResumeItem({ year, subtitle, desc }) {
   return (
     <div className="m-4">

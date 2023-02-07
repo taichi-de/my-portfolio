@@ -2,7 +2,6 @@ import { useState } from 'react';
 import Layout from '../components/Layout';
 import Icons from '../components/Icons';
 import { MdLocationOn, MdEmail } from 'react-icons/md';
-import { FaInstagramSquare, FaGithubSquare, FaLinkedin } from 'react-icons/fa';
 
 export default function Contact() {
   const [contact, setContact] = useState({

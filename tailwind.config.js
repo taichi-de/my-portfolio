@@ -1,12 +1,9 @@
-module.exports = {
-  purge: ['./pages/**/*.{js,ts,jsx,tsx}', './components/**/*.{js,ts,jsx,tsx}'],
-  // content: ["./src/**/*.{html,js}"],
-  darkMode: false, // or 'media' or 'class'
-  theme: {
-    extend: {},
-  },
-  variants: {
-    extend: {},
-  },
-  plugins: [require('@tailwindcss/forms')],
+export const purge = ['./pages/**/*.{js,ts,jsx,tsx}', './components/**/*.{js,ts,jsx,tsx}'];
+export const darkMode = false;
+export const theme = {
+  extend: {},
 };
+export const variants = {
+  extend: {},
+};
+export const plugins = [require('@tailwindcss/forms')];

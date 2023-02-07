@@ -32,18 +32,18 @@ export default function About() {
             computer science at a university.
           </p>
           <p className="my-3">
-            Skills：
+            Skills:
             <br />
             HTML / CSS(Sass) / JavaScript(React, TS, Nextjs) / Ruby(Rails) / GraphQL / Slim /
             Wordpress
           </p>
           <p className="my-3">
-            Languages：
+            Languages:
             <br />
             Japanese / English(B2) / German(C1)
           </p>
           <p className="my-3">
-            Love：
+            Love:
             <br />
             Movies & Coffee & Green
           </p>
