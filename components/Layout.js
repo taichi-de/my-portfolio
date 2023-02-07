@@ -1,9 +1,9 @@
-import React, { useState, useEffect } from "react";
-import Head from "next/head";
-import { Navbar } from "./nabvar/Navbar";
-import { Dropdown } from "./nabvar/Dropdown";
+import React, { useState, useEffect } from 'react';
+import Head from 'next/head';
+import { Navbar } from './nabvar/Navbar';
+import { Dropdown } from './nabvar/Dropdown';
 
-export default function Layout({ children, title = "Portfolio by Nextjs" }) {
+export default function Layout({ children, title = 'Portfolio by Nextjs' }) {
   const [isOpen, setIsOpen] = useState(false);
 
   const toggle = () => {
@@ -17,10 +17,10 @@ export default function Layout({ children, title = "Portfolio by Nextjs" }) {
       }
     };
 
-    window.addEventListener("resize", hideMenu);
+    window.addEventListener('resize', hideMenu);
 
     return () => {
-      window.removeEventListener("resize", hideMenu);
+      window.removeEventListener('resize', hideMenu);
     };
   });
   return (
@@ -34,10 +34,7 @@ export default function Layout({ children, title = "Portfolio by Nextjs" }) {
           name="twitter:description"
           content="A web developer, studied in Akita, based in Germany."
         />
-        <meta
-          name="twitter:image"
-          content="https://taizen-dev.com/taizen-dev.png"
-        />
+        <meta name="twitter:image" content="https://taizen-dev.com/taizen-dev.png" />
       </Head>
       <Navbar toggle={toggle} />
       <Dropdown isOpen={isOpen} toggle={toggle} />
@@ -45,7 +42,7 @@ export default function Layout({ children, title = "Portfolio by Nextjs" }) {
         <div
           className="relative z-10 flex flex-col items-center justify-center w-full h-screen text-center bg-no-repeat bg-cover"
           style={{
-            backgroundImage: "url(/birdBg.jpg)",
+            backgroundImage: 'url(/birdBg.jpg)',
           }}
         >
           {children}

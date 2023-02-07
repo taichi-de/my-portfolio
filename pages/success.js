@@ -1,5 +1,5 @@
-import Layout from "../components/Layout";
-import Link from "next/link";
+import Layout from '../components/Layout';
+import Link from 'next/link';
 
 export default function Success() {
   return (
@@ -9,9 +9,7 @@ export default function Success() {
           Success | Thank you for reaching out to me.
         </h1>
         <Link href="/">
-          <a className="font-serif font-bold text-blue-400 text-md">
-            - Back to Home -
-          </a>
+          <a className="font-serif font-bold text-blue-400 text-md">- Back to Home -</a>
         </Link>
       </div>
     </Layout>

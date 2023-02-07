@@ -1,55 +1,54 @@
-import { useState } from "react";
-import Layout from "../components/Layout";
-import Icons from "../components/Icons";
-import { MdLocationOn, MdEmail } from "react-icons/md";
-import { FaInstagramSquare, FaGithubSquare, FaLinkedin } from "react-icons/fa";
+import { useState } from 'react';
+import Layout from '../components/Layout';
+import Icons from '../components/Icons';
+import { MdLocationOn, MdEmail } from 'react-icons/md';
+import { FaInstagramSquare, FaGithubSquare, FaLinkedin } from 'react-icons/fa';
 
 export default function Contact() {
   const [contact, setContact] = useState({
-    name: "",
-    email: "",
-    subject: "Contact",
-    honeypot: "",
-    message: "",
-    replyTo: "gciuzi52@gmail.com",
+    name: '',
+    email: '',
+    subject: 'Contact',
+    honeypot: '',
+    message: '',
+    replyTo: 'gciuzi52@gmail.com',
     accessKey: process.env.access_key,
   });
 
   const [response, setResponse] = useState({
-    type: "",
-    message: "",
+    type: '',
+    message: '',
   });
 
-  const handleChange = (e) =>
-    setContact({ ...contact, [e.target.name]: e.target.value });
+  const handleChange = (e) => setContact({ ...contact, [e.target.name]: e.target.value });
 
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const res = await fetch("https://api.staticforms.xyz/submit", {
-        method: "POST",
+      const res = await fetch('https://api.staticforms.xyz/submit', {
+        method: 'POST',
         body: JSON.stringify(contact),
-        headers: { "Content-Type": "application/json" },
+        headers: { 'Content-Type': 'application/json' },
       });
 
       const json = await res.json();
 
       if (json.success) {
         setResponse({
-          type: "success",
-          message: "Thank you for reaching out to me.",
+          type: 'success',
+          message: 'Thank you for reaching out to me.',
         });
       } else {
         setResponse({
-          type: "error",
+          type: 'error',
           message: json.message,
         });
       }
     } catch (e) {
-      console.log("An error occurred", e);
+      console.log('An error occurred', e);
       setResponse({
-        type: "error",
-        message: "An error occured while submitting the form",
+        type: 'error',
+        message: 'An error occured while submitting the form',
       });
     }
   };
@@ -84,9 +83,7 @@ export default function Contact() {
             className="text-left"
           >
             <label className="block field">
-              <span className="block mb-2 text-sm font-bold text-gray-700">
-                Name
-              </span>
+              <span className="block mb-2 text-sm font-bold text-gray-700">Name</span>
               <div>
                 <input
                   className="w-full px-4 py-2 text-sm leading-tight text-gray-700 bg-white border-gray-200 rounded appearance-none border-1 focus:outline-none focus:border-purple-500"
@@ -99,9 +96,7 @@ export default function Contact() {
               </div>
             </label>
             <label className="block my-2">
-              <span className="block mb-2 text-sm font-bold text-gray-700">
-                Email
-              </span>
+              <span className="block mb-2 text-sm font-bold text-gray-700">Email</span>
               <input
                 type="email"
                 className="w-full px-4 py-2 text-sm leading-tight text-gray-700 bg-white border-gray-200 rounded appearance-none border-1 focus:outline-none focus:border-purple-500"
@@ -112,9 +107,7 @@ export default function Contact() {
               />
             </label>
             <label className="block">
-              <span className="block mb-2 text-sm font-bold text-gray-700">
-                Content
-              </span>
+              <span className="block mb-2 text-sm font-bold text-gray-700">Content</span>
               <textarea
                 className="w-full px-4 py-2 text-sm leading-tight text-gray-700 bg-white border-gray-200 rounded appearance-none border-1 focus:outline-none focus:border-purple-500"
                 rows="3"
@@ -123,7 +116,7 @@ export default function Contact() {
                 required
               />
             </label>
-            <input type="text" name="honeypot" style={{ display: "none" }} />
+            <input type="text" name="honeypot" style={{ display: 'none' }} />
             <p className="p-1 text-blue-500">{response.message}</p>
             <input
               className="px-4 py-2 mt-2 text-white bg-gray-500 rounded cursor-pointer hover:bg-green-700 font-sm focus:outline-none focus:shadow-outline"

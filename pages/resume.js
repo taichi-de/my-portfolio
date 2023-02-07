@@ -1,12 +1,12 @@
-import Layout from "../components/Layout";
-import ResumeItem from "../components/resume/ResumeItem";
+import Layout from '../components/Layout';
+import ResumeItem from '../components/resume/ResumeItem';
 import {
   resumeObjOne,
   resumeObjTwo,
   resumeObjThree,
   resumeObjFour,
   resumeObjFive,
-} from "../components/resume/ResumeData";
+} from '../components/resume/ResumeData';
 
 export default function Resume() {
   return (

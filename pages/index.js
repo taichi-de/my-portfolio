@@ -1,5 +1,5 @@
-import Layout from "../components/Layout";
-import Icons from "../components/Icons";
+import Layout from '../components/Layout';
+import Icons from '../components/Icons';
 
 export default function Home() {
   return (

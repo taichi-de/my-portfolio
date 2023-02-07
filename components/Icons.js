@@ -1,5 +1,5 @@
-import Link from "next/link";
-import { FaInstagramSquare, FaGithubSquare, FaLinkedin } from "react-icons/fa";
+import Link from 'next/link';
+import { FaInstagramSquare, FaGithubSquare, FaLinkedin } from 'react-icons/fa';
 
 export default function Icons() {
   return (
@@ -14,10 +14,7 @@ export default function Icons() {
           <FaGithubSquare className="w-7 h-7" />
         </a>
       </Link>
-      <Link
-        href="https://www.linkedin.com/in/taichi-tomioka-746241191/"
-        target="_blank"
-      >
+      <Link href="https://www.linkedin.com/in/taichi-tomioka-746241191/" target="_blank">
         <a className="text-gray-300 hover:text-blue-700">
           <FaLinkedin className="w-7 h-7" />
         </a>

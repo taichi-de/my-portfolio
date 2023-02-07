@@ -1,11 +1,6 @@
-import Layout from "../components/Layout";
-import Link from "next/link";
-import {
-  FaWordpressSimple,
-  FaTwitter,
-  FaInstagram,
-  FaPinterest,
-} from "react-icons/fa";
+import Layout from '../components/Layout';
+import Link from 'next/link';
+import { FaWordpressSimple, FaTwitter, FaInstagram, FaPinterest } from 'react-icons/fa';
 
 export default function Linktree() {
   return (
