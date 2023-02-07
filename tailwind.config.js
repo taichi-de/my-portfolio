@@ -1,9 +1,14 @@
-export const purge = ['./pages/**/*.{js,ts,jsx,tsx}', './components/**/*.{js,ts,jsx,tsx}'];
-export const darkMode = false;
-export const theme = {
-  extend: {},
+module.exports = {
+  content: ['./pages/**/*.{js,ts,jsx,tsx}', './components/**/*.{js,ts,jsx,tsx}'],
+  // content: ["./src/**/*.{html,js}"],
+  theme: {
+    extend: {},
+  },
+  variants: {
+    extend: {},
+  },
+  plugins: [
+    require('@tailwindcss/forms'),
+    require('tailwind-scrollbar-hide')
+  ],
 };
-export const variants = {
-  extend: {},
-};
-export const plugins = [require('@tailwindcss/forms')];
