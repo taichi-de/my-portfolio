@@ -2,29 +2,28 @@ import Link from 'next/link';
 
 export const navItems = [
   {
-    name: "About",
-    path: "/about",
+    name: 'About',
+    path: '/about',
   },
   {
-    name: "Resume",
-    path: "/resume",
+    name: 'Resume',
+    path: '/resume',
   },
   {
-    name: "Works",
-    path: "/works",
+    name: 'Works',
+    path: '/works',
   },
   {
-    name: "Linktree",
-    path: "/linktree",
+    name: 'Linktree',
+    path: '/linktree',
   },
   {
-    name: "Contact",
-    path: "/contact",
+    name: 'Contact',
+    path: '/contact',
   },
 ];
 
 export const Navbar = ({ toggle }) => {
-
   return (
     <div className="fixed top-0 z-20">
       <nav
@@ -53,7 +52,11 @@ export const Navbar = ({ toggle }) => {
         <div className="hidden pr-8 md:block">
           {navItems.map((navItem) => {
             return (
-              <Link href={navItem.path} className="px-3 py-2 text-gray-300 rounded hover:bg-gray-700" key={navItem.name}>
+              <Link
+                href={navItem.path}
+                className="px-3 py-2 text-gray-300 rounded hover:bg-gray-700"
+                key={navItem.name}
+              >
                 {navItem.name}
               </Link>
             );

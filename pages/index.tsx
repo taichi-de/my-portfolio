@@ -11,7 +11,7 @@ export default function Home() {
             <span className="relative text-white">Taichi Tomioka</span>
           </span>
         </h1>
-        <p className="mt-5 font-serif font-black text-gray-300 text-md">
+        <p className="mt-7 font-serif font-black text-gray-300 text-md">
           A web developer, studied in Akita, based in Germany.
         </p>
         <Icons />

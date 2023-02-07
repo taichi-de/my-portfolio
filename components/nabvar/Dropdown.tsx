@@ -12,7 +12,11 @@ export const Dropdown = ({ isOpen }) => {
     >
       {navItems.map((navItem) => {
         return (
-          <Link href={navItem.path} className="px-3 py-2 text-gray-300 rounded hover:bg-gray-700" key={navItem.name}>
+          <Link
+            href={navItem.path}
+            className="px-3 py-2 text-gray-300 rounded hover:bg-gray-700"
+            key={navItem.name}
+          >
             {navItem.name}
           </Link>
         );

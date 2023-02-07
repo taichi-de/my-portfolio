@@ -23,6 +23,7 @@ export default function Layout({ children, title = 'Portfolio by Nextjs' }) {
       window.removeEventListener('resize', hideMenu);
     };
   });
+
   return (
     <div className="flex flex-col items-center justify-center max-h-screen font-mono text-sm text-gray-600">
       <Head>
@@ -50,7 +51,7 @@ export default function Layout({ children, title = 'Portfolio by Nextjs' }) {
       </main>
       <footer className="fixed bottom-0 z-20 flex items-center justify-center w-full h-10 bg-black">
         <p className="text-xs text-center text-gray-500">
-          Copyright © 2022 TAIZEN | All rights reserved
+          Copyright © 2023 TAIZEN | All rights reserved
         </p>
       </footer>
     </div>
