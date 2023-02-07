@@ -6,7 +6,7 @@ export const Dropdown = ({ isOpen }) => {
     <div
       className={
         isOpen
-          ? 'fixed top-14 grid grid-rows-4 text-center items-center bg-black z-30 w-screen p-4 '
+          ? 'fixed top-10 grid grid-rows-4 text-center items-center bg-black z-30 w-screen p-4 '
           : 'hidden'
       }
     >

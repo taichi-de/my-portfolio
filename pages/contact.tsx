@@ -109,7 +109,7 @@ export default function Contact() {
               <span className="block mb-2 text-sm font-bold text-gray-700">Content</span>
               <textarea
                 className="w-full px-4 py-2 text-sm leading-tight text-gray-700 bg-white border-gray-200 rounded appearance-none border-1 focus:outline-none focus:border-purple-500"
-                rows="3"
+                rows={3}
                 placeholder="Your message."
                 onChange={handleChange}
                 required
