@@ -1,5 +1,6 @@
-import Layout from '../components/Layout';
 import Image from 'next/image';
+
+import Layout from '../components/Layout';
 
 export default function About() {
   return (
@@ -28,7 +29,8 @@ export default function About() {
             I'm from Japan and studied Agriculture in Akita(Northern Japan).
             <br />
             After graduating from university, I moved to Germany. <br />
-            Currently working as a Working student at a german web company while majoring in computer science at a university.
+            Currently working as a Working student at a german web company while majoring in
+            computer science at a university.
           </p>
           <p className="my-3">
             Skills:

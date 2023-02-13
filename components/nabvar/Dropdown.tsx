@@ -1,4 +1,5 @@
 import Link from 'next/link';
+
 import { navItems } from './Navbar';
 
 export const Dropdown = ({ isOpen }) => {

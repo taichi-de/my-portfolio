@@ -1,7 +1,7 @@
-/* eslint-disable react/react-in-jsx-scope */
-import Layout from '../components/Layout';
 import Link from 'next/link';
 import { FaWordpressSimple, FaTwitter, FaInstagram, FaPinterest } from 'react-icons/fa';
+
+import Layout from '../components/Layout';
 
 export default function Linktree() {
   return (

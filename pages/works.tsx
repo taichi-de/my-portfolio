@@ -1,8 +1,9 @@
-import Layout from '../components/Layout';
 import Link from 'next/link';
 import { FaGithub } from 'react-icons/fa';
-import WorksItem from '../components/works/WorksItem';
+
+import Layout from '../components/Layout';
 import { WorksData } from '../components/works/WorksData';
+import WorksItem from '../components/works/WorksItem';
 
 export default function Works() {
   return (
@@ -15,7 +16,7 @@ export default function Works() {
           })}
         </div>
         <Link
-          href={'https://github.com/taichi-de'}
+          href="https://github.com/taichi-de"
           className="inline-flex items-center justify-center m-2 p-2 text-white bg-green-700 rounded-lg cursor-pointer w-60 hover:bg-yellow-500 hover:outline-none"
         >
           See more in Github

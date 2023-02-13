@@ -8,10 +8,10 @@ export const pageview = (url: URL) => {
 };
 
 type GTagEvent = {
-  action: string;
-  category: string;
-  label: string;
-  value: number;
+  readonly action: string;
+  readonly category: string;
+  readonly label: string;
+  readonly value: number;
 };
 
 // https://developers.google.com/analytics/devguides/collection/gtagjs/events

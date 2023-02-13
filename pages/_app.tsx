@@ -1,6 +1,8 @@
 import { useEffect } from 'react';
-import { AppProps } from 'next/app';
+
+import type { AppProps } from 'next/app';
 import { useRouter } from 'next/router';
+
 import * as gtag from '../utils/gtag';
 import '../styles/globals.css';
 import 'tailwindcss/tailwind.css';

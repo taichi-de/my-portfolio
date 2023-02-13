@@ -1,6 +1,6 @@
 import Layout from '../components/Layout';
-import ResumeItem from '../components/resume/ResumeItem';
 import { ResumeData } from '../components/resume/ResumeData';
+import ResumeItem from '../components/resume/ResumeItem';
 
 export default function Resume() {
   return (

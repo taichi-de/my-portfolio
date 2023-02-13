@@ -1,7 +1,9 @@
 import { useState } from 'react';
-import Layout from '../components/Layout';
-import Icons from '../components/Icons';
+
 import { MdLocationOn, MdEmail } from 'react-icons/md';
+
+import Icons from '../components/Icons';
+import Layout from '../components/Layout';
 
 export default function Contact() {
   const [contact, setContact] = useState({
