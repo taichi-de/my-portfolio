@@ -2,7 +2,7 @@ import Link from 'next/link';
 
 import { navItems } from './Navbar';
 
-export const Dropdown = ({ isOpen }) => {
+export const Dropdown = ({ isOpen }: any) => {
   return (
     <div
       className={

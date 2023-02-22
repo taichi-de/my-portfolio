@@ -23,7 +23,7 @@ export const navItems = [
   },
 ];
 
-export const Navbar = ({ toggle }) => {
+export const Navbar = ({ toggle }: any) => {
   return (
     <div className="fixed top-0 h-14 z-20">
       <nav

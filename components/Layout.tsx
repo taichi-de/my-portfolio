@@ -1,11 +1,17 @@
-import { useEffect, useState } from 'react';
+import { ReactNode, useEffect, useState } from 'react';
 
 import Head from 'next/head';
 
 import { Dropdown } from './nabvar/Dropdown';
 import { Navbar } from './nabvar/Navbar';
 
-export default function Layout({ title = 'Portfolio by Nextjs', children }) {
+export default function Layout({
+  title = 'Portfolio by Nextjs',
+  children,
+}: {
+  title: string;
+  children: ReactNode;
+}) {
   const [isOpen, setIsOpen] = useState(false);
 
   const toggle = () => {
