@@ -8,17 +8,17 @@ import Layout from '../components/Layout';
 export default function Contact() {
   const [contact, setContact] = useState({
     name: '',
+    accessKey: process.env.access_key,
     email: '',
-    subject: 'Contact',
     honeypot: '',
     message: '',
     replyTo: 'gciuzi52@gmail.com',
-    accessKey: process.env.access_key,
+    subject: 'Contact',
   });
 
   const [response, setResponse] = useState({
-    type: '',
     message: '',
+    type: '',
   });
 
   const handleChange = (e: { target: { name: string; value: string } }) =>
@@ -28,28 +28,28 @@ export default function Contact() {
     e.preventDefault();
     try {
       const res = await fetch('https://api.staticforms.xyz/submit', {
-        method: 'POST',
         body: JSON.stringify(contact),
         headers: { 'Content-Type': 'application/json' },
+        method: 'POST',
       });
 
       const json = await res.json();
 
       if (json.success) {
         setResponse({
-          type: 'success',
           message: 'Thank you for reaching out to me.',
+          type: 'success',
         });
       } else {
         setResponse({
-          type: 'error',
           message: json.message,
+          type: 'error',
         });
       }
     } catch (e: unknown) {
       setResponse({
-        type: 'error',
         message: 'An error occured while submitting the form',
+        type: 'error',
       });
     }
   };

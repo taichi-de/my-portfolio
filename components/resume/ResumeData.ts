@@ -1,3 +1,4 @@
+/* eslint-disable sort-keys-custom-order/object-keys */
 export const ResumeData = [
   {
     year: '2020-',

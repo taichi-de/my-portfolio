@@ -5,7 +5,7 @@ import Head from 'next/head';
 import { Dropdown } from './nabvar/Dropdown';
 import { Navbar } from './nabvar/Navbar';
 
-export default function Layout({ children, title = 'Portfolio by Nextjs' }) {
+export default function Layout({ title = 'Portfolio by Nextjs', children }) {
   const [isOpen, setIsOpen] = useState(false);
 
   const toggle = () => {

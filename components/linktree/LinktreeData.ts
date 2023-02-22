@@ -1,8 +1,8 @@
 import { FaTwitter, FaInstagramSquare } from 'react-icons/fa';
 
 export const twitter = {
-  icon: FaTwitter,
   href: '#',
+  icon: FaTwitter,
   subtitle: 'Twitter',
 };
 

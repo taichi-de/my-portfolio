@@ -2,12 +2,12 @@ import Image from 'next/image';
 
 type WorksItemProps = {
   title: string;
-  img: string;
   alt: string;
   desc: string;
+  img: string;
 };
 
-export default function WorksItem({ title, img, alt, desc }: WorksItemProps) {
+export default function WorksItem({ title, alt, desc, img }: WorksItemProps) {
   return (
     <div className="m-4 bg-gray-200 rounded-lg">
       {/* TODO: do clickable -> <Link /> */}
