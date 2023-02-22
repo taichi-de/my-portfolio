@@ -1,7 +1,9 @@
-import { useState, useEffect } from 'react';
+import { useEffect, useState } from 'react';
+
 import Head from 'next/head';
-import { Navbar } from './nabvar/Navbar';
+
 import { Dropdown } from './nabvar/Dropdown';
+import { Navbar } from './nabvar/Navbar';
 
 export default function Layout({ children, title = 'Portfolio by Nextjs' }) {
   const [isOpen, setIsOpen] = useState(false);
@@ -16,9 +18,7 @@ export default function Layout({ children, title = 'Portfolio by Nextjs' }) {
         setIsOpen(false);
       }
     };
-
     window.addEventListener('resize', hideMenu);
-
     return () => {
       window.removeEventListener('resize', hideMenu);
     };

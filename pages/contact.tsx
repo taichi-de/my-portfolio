@@ -21,9 +21,10 @@ export default function Contact() {
     message: '',
   });
 
-  const handleChange = (e) => setContact({ ...contact, [e.target.name]: e.target.value });
+  const handleChange = (e: { target: { name: string; value: string } }) =>
+    setContact({ ...contact, [e.target.name]: e.target.value });
 
-  const handleSubmit = async (e) => {
+  const handleSubmit = async (e: { preventDefault: () => void }) => {
     e.preventDefault();
     try {
       const res = await fetch('https://api.staticforms.xyz/submit', {
@@ -45,8 +46,7 @@ export default function Contact() {
           message: json.message,
         });
       }
-    } catch (e) {
-      console.log('An error occurred', e);
+    } catch (e: unknown) {
       setResponse({
         type: 'error',
         message: 'An error occured while submitting the form',

@@ -1,4 +1,10 @@
-export default function ResumeItem({ year, subtitle, desc }) {
+interface ResumeItemProps {
+  year: string;
+  subtitle: string;
+  desc: string;
+}
+
+export default function ResumeItem({ year, subtitle, desc }: ResumeItemProps) {
   return (
     <div className="m-4">
       <h3 className="inline-flex items-center justify-center w-24 bg-cyan md:text-base sm:text-xs">

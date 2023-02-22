@@ -20,13 +20,13 @@ export default function About() {
         </div>
         <div>
           <h4>
-            Hello! I am&nbsp;
+            Hello! I&apos;am&nbsp;
             <span className="before:block before:absolute before:-inset-1 before:-skew-y-3 before:bg-yellow-500 relative inline-block">
               <span className="relative text-white font-serif font-bold">Taichi Tomioka</span>
             </span>
           </h4>
           <p>
-            I'm from Japan and studied Agriculture in Akita(Northern Japan).
+            I&apos;m from Japan and studied Agriculture in Akita(Northern Japan).
             <br />
             After graduating from university, I moved to Germany. <br />
             Currently working as a Working student at a german web company while majoring in

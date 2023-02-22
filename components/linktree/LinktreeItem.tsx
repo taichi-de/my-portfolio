@@ -1,6 +1,11 @@
 import Link from 'next/link';
 
-export default function LinktreeItem({ icon, subtitle }) {
+interface LinktreeItemProps {
+  icon: JSX.Element;
+  subtitle: string;
+}
+
+export default function LinktreeItem({ icon, subtitle }: LinktreeItemProps) {
   return (
     <Link
       href="{href}"
