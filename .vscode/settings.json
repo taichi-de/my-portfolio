@@ -1,5 +1,9 @@
 {
-  "editor.formatOnSave": true,
+  "files.autoSave": "onFocusChange",
   "editor.defaultFormatter": "esbenp.prettier-vscode",
-  "editor.codeActionsOnSave": ["source.fixAll.eslint"]
+  "editor.formatOnSave": true,
+  "javascript.inlayHints.parameterNames.enabled": "all",
+  "typescript.inlayHints.parameterNames.enabled": "all",
+  "files.trimTrailingWhitespace": true,
+  "editor.inlineSuggest.enabled": true
 }
