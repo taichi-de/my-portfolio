@@ -6,6 +6,7 @@ import { useRouter } from 'next/router';
 import * as gtag from '../utils/gtag';
 import '../styles/globals.css';
 import 'tailwindcss/tailwind.css';
+import { MantineProvider } from '@mantine/core';
 
 const App = ({ Component, pageProps }: AppProps) => {
   const router = useRouter();
@@ -20,7 +21,11 @@ const App = ({ Component, pageProps }: AppProps) => {
     };
   }, [router.events]);
 
-  return <Component {...pageProps} />;
+  return (
+    <MantineProvider withGlobalStyles withNormalizeCSS>
+      <Component {...pageProps} />
+    </MantineProvider>
+  );
 };
 
 export default App;
