@@ -38,10 +38,9 @@ const Blog: NextPage<Props> = (props) => {
 
   return (
     <BlogLayout>
-      <div className="grid grid-cols-12 gap-4 p-8 w-4/5 h-4/5 text-left">
+      <div className="grid grid-cols-12 gap-4 w-4/5 h-4/5 text-left">
         <div className="lg:col-span-8 col-span-12 bg-gray-200 scrollbar-hide overflow-auto px-2">
           <h1 className="text-center text-xl text-bold italic my-8">Archives</h1>
-
           <div className="flex justify-between items-center px-4">
             <p className="text-gray-400">{`${
               search ? '検索結果' : '記事の総数'
