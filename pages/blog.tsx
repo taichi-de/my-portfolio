@@ -5,6 +5,7 @@ import Link from 'next/link';
 import BlogLayout from '../components/BlogLayout';
 import RightSidebar from '../components/blog/RightSidebar';
 import { ComponentProps, useState } from 'react';
+import { Card, Image, Text, Badge, Button, Group } from '@mantine/core';
 
 export type Blog = {
   id: string;
@@ -57,25 +58,40 @@ const Blog: NextPage<Props> = (props) => {
               </button>
             </form>
           </div>
-          <div className="grid grid-cols-2 gap-2">
+          <div className="grid grid-cols-2 gap-2 m-4">
             {contents.map((content) => {
               return (
-                <div
-                  className="md:col-span-1 col-span-2 border border-lime-600 m-4 md:mb-0 p-4"
+                <Link
+                  className="hover: hover:pointer"
+                  href={`/blog/${content.id}`}
                   key={content.id}
                 >
-                  <div className="mx-auto text-sky-500 bg-gray-100 w-full h-40" />
-                  <Link
-                    className="text-base hover:text-blue-600 hover:underline"
-                    href={`/blog/${content.id}`}
-                  >
-                    <p className="my-4">{content.title}</p>
-                  </Link>
-                  <p className="text-sm m-0">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil deleniti
-                    laboriosam recusandae sint praesentium, reprehenderit odio dolores.
-                  </p>
-                </div>
+                  <Card shadow="sm" padding="lg" radius="md" withBorder className="">
+                    <Card.Section>
+                      {/* TODO: change images dinamically */}
+                      <Image
+                        src="https://images.unsplash.com/photo-1527004013197-933c4bb611b3?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=720&q=80"
+                        height={160}
+                        alt="thumbnail"
+                      />
+                    </Card.Section>
+
+                    <Group position="apart" mt="md" mb="xs">
+                      <Text weight={500}>{content.title}</Text>
+                    </Group>
+
+                    <Text size="sm" color="dimmed">
+                      {/* TODO: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil ...' */}
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil deleniti
+                      laboriosam recusandae sint praesentium, reprehenderit odio dolores.
+                    </Text>
+
+                    <Badge color="green" variant="light">
+                      {/* TODO: add tags */}
+                      #React
+                    </Badge>
+                  </Card>
+                </Link>
               );
             })}
           </div>
