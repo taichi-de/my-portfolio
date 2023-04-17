@@ -11,15 +11,16 @@ type Props = Blog & MicroCMSContentId & MicroCMSDate;
 const BlogId: NextPage<Props> = (props) => {
   return (
     <BlogLayout>
-      <div className="grid grid-cols-12 gap-4 p-8 w-4/5 h-4/5">
-        <div className="col-span-8 p-8 bg-gray-200 scrollbar-hide overflow-auto">
+      <div className="grid grid-cols-12 gap-4 p-8 w-4/5 h-[90%]">
+        <div className="lg:col-span-8 col-span-12 p-8 bg-gray-200 scrollbar-hide overflow-auto">
           <div className="w-full h-72 mx-auto bg-gray-400" />
           <h1 className="text-xl font-bold my-8">{props.title}</h1>
-          <time dateTime={props.publishedAt} className="py-2 block">
+          <time dateTime={props.publishedAt} className="pb-8 block">
             {dayjs(props.publishedAt).format('YYYY/MM/DD')}
           </time>
+          {/* TODO: add codeblock + color & copyable*/}
           <div
-            className="prose prose-slate text-gray-300"
+            className="prose prose-slate text-left text-gray-700"
             dangerouslySetInnerHTML={{ __html: props.body }}
           />
         </div>
