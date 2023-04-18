@@ -14,10 +14,6 @@ export const navItems = [
     path: '/works',
   },
   {
-    name: 'Blog',
-    path: '/blog',
-  },
-  {
     name: 'Linktree',
     path: '/linktree',
   },
