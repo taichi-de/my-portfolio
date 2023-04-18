@@ -10,8 +10,7 @@ export default function Linktree() {
         <p className="mb-8 font-mono text-lg text-bold">Linktree</p>
         <div className="flex-col justify-center max-w-xs m-4 mx-auto text-center">
           <Link
-            // TODO: change path
-            href="/blog"
+            href="https://taizen-note.vercel.app/"
             className="flex justify-center px-8 py-3 m-4 text-lg text-yellow-500 align-middle bg-transparent border border-yellow-500 border-solid rounded outline-none hover:bg-white focus:outline-none"
           >
             <FaReadme className="w-5 h-5 mt-1 mr-3" />
