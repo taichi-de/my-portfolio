@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import Image from 'next/Image';
 
 export const navItems = [
   {
@@ -30,7 +31,8 @@ export const Navbar = ({ toggle }: any) => {
         className="relative flex items-center justify-between w-screen p-4 font-mono text-gray-500 bg-black shadow-sm md:h-16 sm:h-10 md:px-8 sm:px-4"
         role="navigation"
       >
-        <Link href="/" className="font-serif text-lg font-bold text-gray-300 ">
+        <Link href="/" className="flex font-serif text-lg font-bold text-gray-400">
+          <Image src="/taizen-logo.png" alt="logo" width={32} height={32} className="mr-3" />
           TAIZEN
         </Link>
         <div className="cursor-pointer md:hidden" onClick={toggle}>

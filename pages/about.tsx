@@ -7,7 +7,7 @@ export default function About() {
     <Layout title="About">
       <div className="p-8 leading-loose text-center text-white md:w-4/12 scrollbar-hide overflow-auto h-4/5 sm:w-full">
         <div className="mb-4">
-          <p className="mb-4 font-mono text-lg text-bold">About me</p>
+          <p className="mb-4 font-mono text-lg text-bold">About Me</p>
         </div>
         <div className="flex justify-center m-4">
           <Image
@@ -21,7 +21,7 @@ export default function About() {
         <div>
           <h4>
             Hello! I&apos;am&nbsp;
-            <span className="before:block before:absolute before:-inset-1 before:-skew-y-3 before:bg-yellow-500 relative inline-block">
+            <span className="before:block before:absolute before:-inset-1 before:-skew-y-3 before:bg-yellow-500 relative inline-block ml-2 mb-2">
               <span className="relative text-white font-serif font-bold">Taichi Tomioka</span>
             </span>
           </h4>
@@ -33,20 +33,20 @@ export default function About() {
             computer science at a university.
           </p>
           <p className="my-3">
-            Skills:
+            - Skills -
             <br />
-            HTML / CSS(Sass) / JavaScript(React, TS, Nextjs) / Ruby(Rails) / GraphQL / Slim /
-            Wordpress
+            HTML / CSS(Sass) / JavaScript(React, Vue, TS, Next.js) / Java / Ruby(Rails) / GraphQL /
+            Python(Flask)
           </p>
           <p className="my-3">
-            Languages:
+            - Languages -
             <br />
             Japanese / English(B2) / German(C1)
           </p>
           <p className="my-3">
-            Love:
+            - Love -
             <br />
-            Movies & Coffee & Green
+            Movies & Tennis & Gardening
           </p>
         </div>
       </div>
