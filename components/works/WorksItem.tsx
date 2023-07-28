@@ -1,24 +1,42 @@
+/* eslint-disable sort-keys-custom-order/object-keys */
 import Image from 'next/image';
-import { FaLock } from 'react-icons/fa';
 
-type WorksItemProps = {
+export interface WorksObj {
   title: string;
-  alt: string;
   desc: string;
+  href: string;
   img: string;
   privateRepo: boolean;
-};
+  remark: string;
+  year: string;
+}
 
-export default function WorksItem({ title, alt, desc, img, privateRepo }: WorksItemProps) {
+export default function WorksItem({
+  worksObj,
+  openModal,
+}: {
+  closeModal: () => void;
+  modalOpened: boolean;
+  openModal: (worksObj: WorksObj) => void;
+  worksObj: WorksObj;
+}) {
   return (
-    <div className="m-4 bg-gray-200 rounded-lg">
-      <Image src={img} alt={alt} width={400} height={250} className="rounded-t-lg" />
+    <div
+      onClick={() => openModal(worksObj)}
+      className="m-4 bg-gray-200 rounded-lg hover:cursor-pointer"
+    >
+      <Image
+        src={worksObj.img}
+        alt={worksObj.title}
+        width={400}
+        height={250}
+        className="rounded-t-lg"
+      />
       <div className="flex-wrap justify-center mx-auto p-2 text-xs text-gray-500">
         <div className="flex justify-center">
-          {privateRepo && <FaLock />}
-          <h3 className="font-bold ml-2">{title}</h3>
+          <h3 className="font-bold ml-2">{worksObj.title}</h3>
         </div>
-        <p>{desc}</p>
+        <p>{worksObj.desc}</p>
       </div>
     </div>
   );
