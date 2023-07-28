@@ -22,10 +22,11 @@
     "cross-env": "^7.0.3",
     "dayjs": "^1.11.7",
     "microcms-js-sdk": "^2.3.3",
-    "next": "^13.1.6",
+    "next": "^13.4.12",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-icons": "^4.2.0",
+    "sharp": "^0.32.4",
     "tailwind-scrollbar-hide": "^1.1.7"
   },
   "devDependencies": {
