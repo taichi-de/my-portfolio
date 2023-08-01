@@ -46,12 +46,12 @@ export const WorksData = [
   {
     title: 'Dashboard App',
     alt: 'Dashboard App',
-    desc: 'Next.js/TS/MantineUI/Flask/RabbitMQ',
+    desc: 'Next.js/TS/Linux Shell/Flask/RabbitMQ',
     href: 'https://github.com/taichi-de/dashboard-Tailwindcss',
     img: '/dashboard-app.png',
     privateRepo: true,
     remark:
-      'This is a Full-Stack App to automate configration. I designed the dashboard-like UI and did all the full-stack development myself.',
+      'This is a Full-Stack App to automate configration. I designed this dashboard-like UI and did all the full-stack development myself.',
     year: '2023',
   },
   {
