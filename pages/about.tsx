@@ -11,10 +11,10 @@ export default function About() {
         <div className="flex justify-center m-4">
           <Image
             className="rounded-full mb-2"
-            src="/profile.png"
+            src="/profileImg.png"
             width={120}
             height={120}
-            alt="profile"
+            alt="profile img"
           />
         </div>
         <div>
