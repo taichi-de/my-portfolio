@@ -1,5 +1,4 @@
 import Image from 'next/image';
-
 import Layout from '../components/Layout';
 
 export default function About() {
@@ -11,8 +10,8 @@ export default function About() {
         </div>
         <div className="flex justify-center m-4">
           <Image
-            className="rounded-full"
-            src="/profile.jpeg"
+            className="rounded-full mb-2"
+            src="/profile.png"
             width={120}
             height={120}
             alt="profile"
@@ -21,8 +20,8 @@ export default function About() {
         <div>
           <h4>
             Hello! I&apos;am&nbsp;
-            <span className="before:block before:absolute before:-inset-1 before:-skew-y-3 before:bg-yellow-500 relative inline-block ml-2 mb-2">
-              <span className="relative text-white font-serif font-bold">Taichi Tomioka</span>
+            <span className="bg-gradient-to-r from-purple-500 to-pink-400 text- font-serif font-bold py-1 px-2">
+              Taichi Tomioka
             </span>
           </h4>
           <p>
@@ -35,7 +34,7 @@ export default function About() {
           <p className="my-3">
             - Skills -
             <br />
-            HTML / CSS(Sass) / JavaScript(React, Vue, TS, Next.js) / Java / Ruby(Rails) / GraphQL /
+            HTML / CSS(Sass) / JavaScript(React(Next.js), Vue, TS) / Java / Ruby(Rails) / GraphQL /
             Python(Flask)
           </p>
           <p className="my-3">
@@ -46,7 +45,7 @@ export default function About() {
           <p className="my-3">
             - Love -
             <br />
-            Movies & Tennis & Gardening
+            DIY & Tennis & Gardening & Travel
           </p>
         </div>
       </div>

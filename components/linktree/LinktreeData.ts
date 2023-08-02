@@ -1,10 +1,10 @@
-import { FaReadme, FaGithub, FaInstagram, FaLinkedin } from 'react-icons/fa';
+import { FaMedium, FaGithub, FaLinkedin } from 'react-icons/fa';
 
 export const links = [
   {
     color: 'border-green-600',
     href: 'https://taizen-note.vercel.app/',
-    icon: FaReadme,
+    icon: FaMedium,
     label: 'Blog',
     txtColor: 'text-green-600',
   },
@@ -14,13 +14,6 @@ export const links = [
     icon: FaGithub,
     label: 'GitHub',
     txtColor: 'text-yellow-600',
-  },
-  {
-    color: 'border-fuchsia-600',
-    href: 'https://www.instagram.com/taichi_tomi/',
-    icon: FaInstagram,
-    label: 'Instagram',
-    txtColor: 'text-fuchsia-600',
   },
   {
     color: 'border-sky-600',
