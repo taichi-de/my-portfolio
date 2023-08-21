@@ -1,6 +1,5 @@
 import Link from 'next/link';
 import { FaMedium, FaGithubSquare, FaLinkedin } from 'react-icons/fa';
-import { MdOutlineLibraryBooks } from 'react-icons/md';
 
 export default function Icons() {
   return (

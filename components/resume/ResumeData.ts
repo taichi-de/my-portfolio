@@ -1,28 +1,49 @@
-/* eslint-disable sort-keys-custom-order/object-keys */
+import { MdAirplanemodeActive } from 'react-icons/md';
+import { GiGraduateCap } from 'react-icons/gi';
+import { FaSchool } from 'react-icons/fa';
+import { MdComputer } from 'react-icons/md';
+
 export const ResumeData = [
   {
-    year: '2020-',
-    subtitle: 'studying CS & working at a web company',
-    desc: 'learning Web developing everyday with FUN!',
+    desc: 'Working as a Frontend Developer part time',
+    icon: MdComputer,
+    subtitle: 'Working Student (Frontend) @FCCL Gmbh',
+    year: 'Aug.2022-',
   },
   {
-    year: '2019-',
-    subtitle: 'freelance web developer',
-    desc: 'graduade ▶︎ work as a waiter ▶︎ move to germany',
+    desc: 'worked as a Backend Developer part time',
+    icon: MdComputer,
+    subtitle: 'Working Student @Conlance Gmbh',
+    year: '2020.Oct – 2021.Feb',
   },
   {
-    year: '2014-2019',
-    subtitle: 'Akita Prefectural University',
+    desc: 'Also Taught myself to code(Frontend) in my free time.',
+    icon: GiGraduateCap,
+    subtitle: 'CS Bachelor @THA',
+    year: '2020.Oct. -',
+  },
+  {
+    desc: 'Graduated Uni ▶︎ worked as a waiter ▶︎ moved to germany',
+    icon: MdAirplanemodeActive,
+    subtitle: 'Moved to Germany & Learned German(B2->C1)',
+    year: '2019',
+  },
+  {
     desc: 'Senior project: hydroponic culture',
+    icon: GiGraduateCap,
+    subtitle: 'Akita Prefectural University',
+    year: '2018.Apr. - 2019.Mar.',
   },
   {
-    year: '2017-2018',
-    subtitle: 'study abroad',
-    desc: 'home-stay & learn german',
+    desc: 'home-stay & Learned german(A0->B2)',
+    icon: MdAirplanemodeActive,
+    subtitle: 'Studied abroad (in Augsburg)',
+    year: '2017.Apr. - 2018.Mar.',
   },
   {
-    year: '2011-2014',
-    subtitle: 'High school',
-    desc: 'tennis & soccer',
+    desc: 'Studied Agriculture',
+    icon: GiGraduateCap,
+    subtitle: 'Akita Prefectural University',
+    year: '2014.Apr. - 2019.Mar.',
   },
 ];

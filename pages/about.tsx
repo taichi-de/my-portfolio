@@ -4,9 +4,9 @@ import Layout from '../components/Layout';
 export default function About() {
   return (
     <Layout title="About">
-      <div className="p-8 leading-loose text-center text-white md:w-4/12 scrollbar-hide overflow-auto h-4/5 sm:w-full">
+      <div className="p-8 leading-loose text-center text-gray-200 md:w-4/12 scrollbar-hide overflow-auto h-4/5 sm:w-full">
         <div className="mb-4">
-          <p className="mb-4 font-mono text-lg text-bold">About Me</p>
+          <p className="mb-4 font-mono text-lg">About Me</p>
         </div>
         <div className="flex justify-center m-4">
           <Image
