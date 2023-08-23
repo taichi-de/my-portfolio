@@ -59,7 +59,7 @@ export const WorksData = [
     alt: 'taizen-blog',
     desc: 'Next.js/MantineUI/MicroCMS',
     href: 'https://github.com/taichi-de/taizen-note',
-    img: '/taizen-note.png',
+    img: '/taizen-note-v2.png',
     privateRepo: false,
     remark:
       'My blog, where I continue to develop and take my development notes. Made with Next.js, MantineUI, and MicroCMS as a headless CMS.',
