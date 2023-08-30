@@ -5,7 +5,7 @@ export default function About() {
   return (
     <Layout title="About">
       <div className="p-8 leading-loose text-center text-gray-200 md:w-4/12 scrollbar-hide overflow-auto h-4/5 sm:w-full">
-        <h1 className="mb-4 font-mono text-lg">About Me</h1>
+        <h1 className="mb-4 text-lg">About Me</h1>
         <div className="relative flex justify-center my-12">
           <div className="rounded-text rotating">
             <svg viewBox="0 0 200 200">
@@ -14,10 +14,10 @@ export default function About() {
                 d="M 85,0 A 85,85 0 0 1 -85,0 A 85,85 0 0 1 85,0"
                 transform="translate(100,100)"
                 fill="none"
-                stroke-width="0"
+                strokeWidth="0"
               />
-              <g font-size="13px">
-                <text text-anchor="start">
+              <g fontSize="13px">
+                <text textAnchor="start">
                   <textPath className="coloring" xlinkHref="#textPath" startOffset="0%">
                     Currently seeking for a new position as a Junior Frontend developer
                   </textPath>
@@ -51,8 +51,8 @@ export default function About() {
           <p className="my-3">
             - Skills -
             <br />
-            HTML / CSS(Tailwindcss, MantineUI) / JavaScript(React(Next.js), Vue.js, TS) / Java /
-            Python(Flask) / Supabase / SQL / Linux Shell
+            HTML / CSS(Tailwindcss, MantineUI) / JavaScript(React(Next.js), Vue.js, TS) / Recoil,
+            Pinia / Java / Python(Flask) / Supabase / SQL / Linux Shell
           </p>
           <p className="my-3">
             - Languages -

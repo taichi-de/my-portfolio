@@ -26,7 +26,7 @@ export default function Works() {
   return (
     <Layout title="Works">
       <div className="h-full p-4">
-        <p className="font-mono text-lg text-gray-200 mt-16">Works</p>
+        <p className="text-lg text-gray-200 mt-16">Works</p>
         <div className="grid w-[90%] sm:w-3/4 grid-cols-1 mx-auto my-4 scrollbar-hide overflow-auto leading-relaxed text-center text-white h-2/3 sm:grid-cols-3">
           {WorksData.map((worksObj) => {
             const tags = currentWorksObj?.desc.split('/');

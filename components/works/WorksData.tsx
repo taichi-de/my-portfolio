@@ -2,7 +2,7 @@ export const WorksData = [
   {
     title: 'Portfolio',
     alt: 'portfolio',
-    desc: 'Next/TS/TailwindCSS/MantineUI',
+    desc: 'Next.js/TS/TailwindCSS/MantineUI',
     href: 'https://github.com/taichi-de/my-portfolio',
     img: '/taizen-dev.png',
     privateRepo: false,
@@ -57,7 +57,7 @@ export const WorksData = [
   {
     title: 'Taizen Blog',
     alt: 'taizen-blog',
-    desc: 'Next.js/MantineUI/MicroCMS',
+    desc: 'Next.js/MantineUI/Recoil/microCMS',
     href: 'https://github.com/taichi-de/taizen-note',
     img: '/taizen-note-v2.png',
     privateRepo: false,

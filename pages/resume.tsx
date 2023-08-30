@@ -6,7 +6,7 @@ export default function Resume() {
   return (
     <Layout title="Resume">
       <div className="h-full pt-20">
-        <p className="mt-4 sm:mt-10 font-mono text-lg text-gray-200">Resume</p>
+        <p className="mt-4 sm:mt-10 text-lg text-gray-200">Resume</p>
         <Timeline
           active={0}
           bulletSize={24}

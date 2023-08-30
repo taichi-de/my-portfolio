@@ -6,7 +6,7 @@ export default function Linktree() {
   return (
     <Layout title="Linktree">
       <div className="w-full p-4 leading-loose text-center">
-        <p className="font-mono text-lg text-gray-200">Linktree</p>
+        <p className="text-lg text-gray-200">Linktree</p>
         <div className="flex-col justify-center max-w-xs mt-4 mx-auto text-center">
           {links.map((link) => {
             return (

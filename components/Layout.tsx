@@ -31,7 +31,7 @@ export default function Layout({
   });
 
   return (
-    <div className="flex flex-col items-center justify-center max-h-screen font-mono text-sm text-gray-600">
+    <div className="flex flex-col items-center justify-center max-h-screen font-sans text-sm text-gray-600">
       <Head>
         <title>{title}</title>
         <meta name="twitter:card" content="summary_large_image" />

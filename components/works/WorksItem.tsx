@@ -32,11 +32,11 @@ export default function WorksItem({
         height={250}
         className="rounded-t-lg"
       />
-      <div className="flex-wrap justify-center mx-auto p-2 text-xs text-gray-500">
+      <div className="flex-wrap justify-center mx-auto py-2 px-6 text-xs text-gray-500">
         <div className="flex justify-center">
           <h3 className="font-bold ml-2">{worksObj.title}</h3>
         </div>
-        <p>{worksObj.desc}</p>
+        <p style={{ overflowWrap: 'break-word' }}>{worksObj.desc}</p>
       </div>
     </div>
   );

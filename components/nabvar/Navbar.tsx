@@ -28,7 +28,7 @@ export const Navbar = ({ toggle }: any) => {
   return (
     <div className="fixed top-0 h-14 z-20">
       <nav
-        className="relative flex items-center justify-between w-screen p-4 font-mono text-gray-500 bg-black shadow-sm md:h-16 sm:h-10 md:px-8 sm:px-4"
+        className="relative flex items-center justify-between w-screen p-4 text-gray-500 bg-black shadow-sm md:h-16 sm:h-10 md:px-8 sm:px-4"
         role="navigation"
       >
         <Link href="/" className="flex font-serif text-lg font-bold text-gray-400">
