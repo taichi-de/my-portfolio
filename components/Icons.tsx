@@ -19,7 +19,7 @@ export default function Icons() {
         <FaLinkedin className="w-7 h-7" />
       </Link>
       <Link
-        href="https://www.instagram.com/taichi_tomi/"
+        href="https://taizen-note.vercel.app/"
         target="_blank"
         className="text-gray-300 hover:text-green-700"
       >

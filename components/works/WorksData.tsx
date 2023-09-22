@@ -22,15 +22,15 @@ export const WorksData = [
     year: '2023',
   },
   {
-    title: 'PresentTalesLP',
-    alt: 'presenttalesLP',
-    desc: 'HTML/Sass/Gulp',
-    href: 'https://github.com/taichi-de/PresentTalesLP',
-    img: '/presenttalesLP.png',
+    title: 'Immo-scraper',
+    alt: 'Immo-scraper',
+    desc: 'Next.js/Flask/BeaufitulSoup4',
+    href: 'https://github.com/taichi-de/Immo-scraper',
+    img: '/Immo-scraper.png',
     privateRepo: false,
     remark:
-      'This LP was for my friend who is preparing to start a new business. I made this site with HTML/Sass/Gulp.',
-    year: '2021',
+      'This is my first Web Scraping project. I made this app to scrape real estate information from a website (ImmobilienWelt) and display it in frontend.',
+    year: '2023',
   },
   {
     title: 'E-commerce App',
@@ -64,5 +64,16 @@ export const WorksData = [
     remark:
       'My blog, where I continue to develop and take my development notes. Made with Next.js, MantineUI, and MicroCMS as a headless CMS.',
     year: '2023',
+  },
+  {
+    title: 'PresentTalesLP',
+    alt: 'presenttalesLP',
+    desc: 'HTML/Sass/Gulp',
+    href: 'https://github.com/taichi-de/PresentTalesLP',
+    img: '/presenttalesLP.png',
+    privateRepo: false,
+    remark:
+      'This LP was for my friend who is preparing to start a new business. I made this site with HTML/Sass/Gulp.',
+    year: '2021',
   },
 ];
